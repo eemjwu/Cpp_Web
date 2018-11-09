@@ -1,0 +1,69 @@
+2018-10-30 06:43:37.155471 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():18  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-10-30 06:43:37.156886 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():26  ≥ı ºªØ≥…π¶
+2018-10-30 06:43:42.779917 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : GET,  url: /,  params: , cookie: password=; session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==
+2018-10-30 06:43:42.780723 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=01-01-1970 08:00:01 GMT; path=; domain=
+Set-Cookie: session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==; expires=; path=; domain=
+
+
+2018-10-30 06:43:43.669387 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:43:46.665752 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CLogin.cpp:logout():43  method : GET,  url: /logout,  params: , cookie: password=; session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==
+2018-10-30 06:43:46.665848 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=; expires=01-01-1970 08:00:01 GMT; path=; domain=
+
+
+2018-10-30 06:43:46.715354 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:43:47.841352 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : POST,  url: /index,  params: username=liukang&password=325, cookie: password=; session=
+2018-10-30 06:43:47.841495 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():163  ¡¨Ω””––ß
+2018-10-30 06:43:47.841507 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():171  rSql: select user_id from t_user_info where user_name = 'liukang' and pass_word = '325'
+2018-10-30 06:43:47.842065 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():180  —È÷§ ß∞‹
+2018-10-30 06:43:47.842193 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+
+
+2018-10-30 06:43:47.873535 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:43:52.349564 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : POST,  url: /index,  params: username=wmj&password=123456, cookie: password=; session=
+2018-10-30 06:43:52.349675 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():163  ¡¨Ω””––ß
+2018-10-30 06:43:52.349685 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():171  rSql: select user_id from t_user_info where user_name = 'wmj' and pass_word = '123456'
+2018-10-30 06:43:52.350054 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():183  —È÷§≥…π¶
+2018-10-30 06:43:52.350066 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():187  rSql: update t_user_info set online='1' where user_name = 'wmj'
+2018-10-30 06:43:52.350201 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():193  ∏¸–¬≥…π¶
+2018-10-30 06:43:52.350217 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():45  ‰∏ä‰º†„ÄÇ„ÄÇ„ÄÇ
+2018-10-30 06:43:52.351268 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():51  ‰∏ä‰º†ÊàêÂäü
+2018-10-30 06:43:52.351507 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==; expires=; path=; domain=
+
+
+2018-10-30 06:43:52.405609 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:45:26.634433 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():18  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-10-30 06:45:26.635724 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():26  ≥ı ºªØ≥…π¶
+2018-10-30 06:45:33.849519 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CLogin.cpp:logout():43  method : GET,  url: /logout,  params: , cookie: password=; session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==
+2018-10-30 06:45:33.849710 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=; expires=01-01-1970 08:00:01 GMT; path=; domain=
+
+
+2018-10-30 06:45:33.898000 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:45:36.009870 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : POST,  url: /index,  params: username=liukang&password=325, cookie: password=; session=
+2018-10-30 06:45:36.010114 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():163  ¡¨Ω””––ß
+2018-10-30 06:45:36.010125 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():171  rSql: select user_id from t_user_info where user_name = 'liukang' and pass_word = '325'
+2018-10-30 06:45:36.010784 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():180  —È÷§ ß∞‹
+2018-10-30 06:45:36.010905 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+
+
+2018-10-30 06:45:36.042784 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 
+2018-10-30 06:45:39.644202 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : POST,  url: /index,  params: username=wmj&password=123456, cookie: password=; session=
+2018-10-30 06:45:39.644344 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():163  ¡¨Ω””––ß
+2018-10-30 06:45:39.644367 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():171  rSql: select user_id from t_user_info where user_name = 'wmj' and pass_word = '123456'
+2018-10-30 06:45:39.644778 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():183  —È÷§≥…π¶
+2018-10-30 06:45:39.644790 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():187  rSql: update t_user_info set online='1' where user_name = 'wmj'
+2018-10-30 06:45:39.644881 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():193  ∏¸–¬≥…π¶
+2018-10-30 06:45:39.644898 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():45  ‰∏ä‰º†„ÄÇ„ÄÇ„ÄÇ
+2018-10-30 06:45:39.645902 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():51  ‰∏ä‰º†ÊàêÂäü
+2018-10-30 06:45:39.646157 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==; expires=; path=; domain=
+
+
+2018-10-30 06:45:39.738898 [Error]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():150  not find route: /favicon.ico 

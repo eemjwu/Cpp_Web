@@ -1,0 +1,26 @@
+2018-11-07 04:18:12.531137 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():18  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-07 04:18:12.532592 [Debug]/home/liukang/workspace/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
+2018-11-07 04:18:12.532603 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():26  初始化成功
+2018-11-07 04:18:30.700504 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():113  IP: 218.192.168.196
+2018-11-07 04:18:30.700590 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CIndex.cpp:index():10  method : POST,  url: /index,  params: username=wmj&password=123456, cookie: password=; session=
+2018-11-07 04:18:30.701058 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():249  连接有效
+2018-11-07 04:18:30.701120 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():257  rSql: select user_id from t_user_info where user_name = 'wmj' and pass_word = '123456'
+2018-11-07 04:18:30.701778 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():269  验证成功
+2018-11-07 04:18:30.701822 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():273  rSql: update t_user_info set online='1' where user_name = 'wmj'
+2018-11-07 04:18:30.702051 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CSql.cpp:UserLogin():279  更新成功
+2018-11-07 04:18:30.702483 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==; expires=; path=; domain=
+
+
+2018-11-07 04:21:52.660335 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():18  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-07 04:21:52.662123 [Debug]/home/liukang/workspace/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
+2018-11-07 04:21:52.662134 [Debug]/home/liukang/workspace/FastCgiCpp/src/main.cpp:main():26  初始化成功
+2018-11-07 04:22:05.739924 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():113  X-Forwarded-For: 218.192.168.196
+2018-11-07 04:22:05.739953 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Route.cpp:processMessage():117  Host: 218.192.170.66
+2018-11-07 04:22:05.739992 [Debug]/home/liukang/workspace/FastCgiCpp/src/apps/CLogin.cpp:logout():43  method : GET,  url: /logout,  params: , cookie: password=; session=YWJjZGVmZ2xpdWthbmdoYWhhdGVzdA==
+2018-11-07 04:22:05.740617 [Debug]/home/liukang/workspace/FastCgiCpp/src/route/Request.cpp:Out():96  Content-type: text/html
+Set-Cookie: password=; expires=; path=; domain=
+Set-Cookie: session=; expires=01-01-1970 08:00:01 GMT; path=; domain=
+
+

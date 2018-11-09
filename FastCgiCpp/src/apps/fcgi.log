@@ -1,0 +1,4 @@
+2018-11-04 02:45:32.595093 [Debug]/home/liukang/workspace/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
+2018-11-04 02:45:32.600788 [Debug]CSql.cpp:UpdateFileInfo():143  
+2018-11-04 02:45:32.600804 [Debug]CSql.cpp:UpdateFileInfo():144  更新...
+2018-11-04 02:45:32.603553 [Debug]CSql.cpp:UpdateFileInfo():150  更新成功
