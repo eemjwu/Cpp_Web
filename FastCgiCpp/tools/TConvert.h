@@ -20,6 +20,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 #include "TDateTime.h"
+#include "TString.h"
 
 namespace WebTool
 {
@@ -55,7 +56,9 @@ namespace WebTool
 		int to_timestamp10();//获取当前时间长度为10位长度的时间戳
 		long to_timestamp13();//获取当前时间长度为13位长度的时间戳
 
-		std::string to_date(const TDate& date); //将时间格式化为日期字符串
+		std::string date_to_string(const TDate& date); //将时间格式化为日期字符串
+
+		TDate to_date(TString&);
 
 		///对指定时间进行加减运算，几秒、几分、几小时、几日、几周、几月、几年
 		///sign : y = 年, m = 月, w = 周, d = 日, h = 时, n = 分钟, s = 秒

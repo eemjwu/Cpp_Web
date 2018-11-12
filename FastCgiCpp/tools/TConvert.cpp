@@ -79,11 +79,18 @@ namespace WebTool
 		return tv.tv_sec * 1000 + tv.tv_usec / 1000;
 
 	}
-	std::string TConvert::to_date(const TDate & dt)
+	std::string TConvert::date_to_string(const TDate & dt)
 	{
 		std::string res;
 		res = dt.strftime("%Y-%m-%d");
 		return res;
+	}
+	TDate TConvert::to_date(TString& s)
+	{
+		TDate dt;
+		vector<TString> res_s = s.split("-");
+		dt.setDate(atoi(res_s[0].c_str()), atoi(res_s[1].c_str()), atoi(res_s[2].c_str()));
+		return dt;
 	}
 	TDate TConvert::timedelta(const std::string sign, const TDate & dt, int value)
 	{
@@ -135,13 +142,13 @@ namespace WebTool
 	}
 }
 
-// TEST
+#ifdef TEST_MAIN
 int main()
 {
 	using namespace std;
 	WebTool::TConvert T;
-	int i_r;
-	/*i_r = T.to_float("1");
+	/*int i_r;
+	i_r = T.to_float("1");
 	cout << i_r << endl;
 	i_r = T.to_float("1.2");
 	cout << i_r << endl;
@@ -154,7 +161,7 @@ int main()
 	i_r = T.to_float("-1");
 	cout << i_r << endl;
 	i_r = T.to_float("-1.2");
-	cout << i_r << endl;*/
+	cout << i_r << endl;
 
 	string s;
 	s = T.to_number();
@@ -177,9 +184,10 @@ int main()
 
 	dt1 = T.timedelta("d", dt, 2);
 
-	dt1.show();
-
-
-
+	dt1.show();*/
+	WebTool::TString s = "2018-11-11";
+	WebTool::TDate dt =  T.to_date(s);
+	dt.show();
 }
+#endif
 
