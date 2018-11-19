@@ -1,1 +1,1 @@
-g++ -std=c++11 -o main TDateTime.cpp TConvert.cpp -std=c++11
+g++ -g -std=c++11 -lhiredis -o main TRedis.cpp -std=c++11 -D TEST_MAIN -I /usr/local/include/hiredis 

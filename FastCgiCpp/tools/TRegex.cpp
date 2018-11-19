@@ -1,5 +1,6 @@
 #include "TRegex.h"
 #include <map>
+//#define TEST_MAIN
 using namespace std;
 
 namespace WebTool
