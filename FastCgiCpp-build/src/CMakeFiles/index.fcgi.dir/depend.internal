@@ -9,7 +9,6 @@ src/CMakeFiles/index.fcgi.dir/apps/CArticle.cpp.o
  /home/Cpp_Web/FastCgiCpp/src/../tools/TFile.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TJson.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
- /home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TRedis.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
@@ -58,7 +57,6 @@ src/CMakeFiles/index.fcgi.dir/apps/CIndex.cpp.o
  /home/Cpp_Web/FastCgiCpp/src/../tools/TFile.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TJson.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
- /home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TRedis.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
@@ -107,7 +105,6 @@ src/CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.o
  /home/Cpp_Web/FastCgiCpp/src/../tools/TFile.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TJson.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
- /home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TRedis.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
@@ -155,7 +152,6 @@ src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o
  /home/Cpp_Web/FastCgiCpp/src/../tools/TEncode.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TJson.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
- /home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TString.h
@@ -189,7 +185,6 @@ src/CMakeFiles/index.fcgi.dir/main.cpp.o
  /home/Cpp_Web/FastCgiCpp/src/../tools/TFile.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TJson.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
- /home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TRedis.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
  /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h

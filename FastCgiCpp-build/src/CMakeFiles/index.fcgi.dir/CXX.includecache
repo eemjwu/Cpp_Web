@@ -62,10 +62,6 @@ TSocket.h
 Singleton.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/Singleton.h
 
-/home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
-TLog.h
-/home/Cpp_Web/FastCgiCpp/src/../tools/TLog.h
-
 /home/Cpp_Web/FastCgiCpp/src/../tools/TRedis.h
 hiredis.h
 -
@@ -157,8 +153,6 @@ TWebSocket.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/TWebSocket.h
 TSql.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
-TMongo.h
-/home/Cpp_Web/FastCgiCpp/src/../tools/TMongo.h
 
 /home/Cpp_Web/FastCgiCpp/src/../tools/random_helper.h
 iostream
@@ -174,22 +168,36 @@ stdlib.h
 time.h
 -
 
+/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp
+CArticle.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
+
 /home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
+
+/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp
+CIndex.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.h
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CIndex.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
 
+/home/Cpp_Web/FastCgiCpp/src/apps/CLogin.cpp
+CLogin.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CLogin.h
+
 /home/Cpp_Web/FastCgiCpp/src/apps/CLogin.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
 
+/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp
+CSql.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
+
 /home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
 TSql.h
--
-TMongo.h
 -
 TLog.h
 -

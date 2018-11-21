@@ -86,7 +86,6 @@ tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TDateTime.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TEncode.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TJson.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.h
-tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TMongo.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSocket.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSql.cpp
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSql.h

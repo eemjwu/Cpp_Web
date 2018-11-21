@@ -21,3 +21,8 @@
 2018-11-21 11:25:09.987617 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
 2018-11-21 11:25:09.987623 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():39  初始化成功
 2018-11-21 11:25:09.987980 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():42  ID 366v1
+2018-11-21 16:01:49.841456 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-21 16:01:49.845004 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-21 16:01:49.845120 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
+2018-11-21 16:01:49.845129 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-21 16:01:49.845133 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功

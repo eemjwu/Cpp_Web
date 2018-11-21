@@ -1,6 +1,6 @@
 #pragma once
 #include<TSql.h>
-#include<TMongo.h>
+//#include<TMongo.h>
 #include<TLog.h>
 #include<string>
 #include<stdio.h>
@@ -41,41 +41,44 @@ public:
 	///@return  错误码
 	int UserLogin(const std::string& User, const std::string& Passwd);
 
-	///@brief   查看文件列表
-	///@param   user_name			[in] - 用户名  或者用户 ID 提高查询速度  用户ID为登录成功时返回的
-	///@param   & vector<string>	[out] - 返回的文件列表 每个[]结构 { 文件名： 文件属性： ，上传日期： 文件大小：}
-	///@return  错误码
-	int ListFileInfo(const std::string& User_name,std::string &);
-
 	///@brief   退出登录 
 	///@param   user_name			[in] - 用户名  或者用户 ID 提高查询速度  用户ID为登录成功时返回的
 	///@return  错误码
 	int UserLogout(const std::string& User);
 
+
+
+
+	///@brief   查看文件列表
+	///@param   user_name			[in] - 用户名  或者用户 ID 提高查询速度  用户ID为登录成功时返回的
+	///@param   & vector<string>	[out] - 返回的文件列表 每个[]结构 { 文件名： 文件属性： ，上传日期： 文件大小：}
+	///@return  错误码
+	//int ListFileInfo(const std::string& User_name,std::string &);
+
 	///@brief   列出库中所有公开的文件 
 	///@param   vector<std::string> &			[out] - 存放返回的json 
 	///@return  错误码
-	int ListAllFile(std::string &);
+	//int ListAllFile(std::string &);
 
 	///@brief   上传文件 
 	///@param   user_name 
 	///@param   json			包含：文件名，文件隐私属性，标签 
 	///@return  错误码
-	int UploadFile(const std::string &, const std::string &,const std::string &);
+	//int UploadFile(const std::string &, const std::string &,const std::string &);
 
 	///@brief   下载文件 
 	///@param   file_name			
 	///@param   cla									类别			
 	///@param   donw_url							向nginx传递的uri							
 	///@return  错误码
-	int DownloadFile(const std::string &file_name, const std::string & cla,std::string & down_url);
+	//int DownloadFile(const std::string &file_name, const std::string & cla,std::string & down_url);
 
 	///@brief   删除文件 
 	///@param   file_name			
 	///@param   cla									类别			
 	///@param   donw_url							向nginx传递的uri							
 	///@return  错误码
-	int DeleFile(const std::string& User_name,const std::string &file_name, const std::string & cla);
+	//int DeleFile(const std::string& User_name,const std::string &file_name, const std::string & cla);
 
 private:
 	///@brief   上传成功 更新文件对应关系 
@@ -83,11 +86,11 @@ private:
 	///@param   file_name			
 	///@param   file_size			
 	///@return  错误码
-	int UpdateFileInfo(const std::string &username, const std::string &file_name, const std::string & table, const unsigned long long &file_size);
+	//int UpdateFileInfo(const std::string &username, const std::string &file_name, const std::string & table, const unsigned long long &file_size);
 
 	WebTool::TMysql SQL;
-	WebTool::TMongo Mongo;
-	std::string monmgoHost = "localhost:27017";
+	//WebTool::TMongo Mongo;
+	//std::string monmgoHost = "localhost:27017";
 
 };
 
