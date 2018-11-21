@@ -18,7 +18,7 @@ endif()
 include_directories(SYSTEM ".")
 
 include_directories("/usr/include/mysql")
-include_directories("/usr/include/mongo")
+#include_directories("/usr/include/mongo")
 include_directories("/usr/local/include/hiredis")
 
 include_directories("${PROJECT_SOURCE_DIR}/websocketpp")
@@ -56,7 +56,7 @@ set(libTool_HEAD
     TSocket.h
     TSql.h
 	
-	TMongo.h
+	#TMongo.h
 	random_helper.h
 	TRedis.h
 
@@ -76,7 +76,7 @@ set(libTool_SRC
     TSocket.cpp
     TSql.cpp
 	
-	TMongo.cpp
+	#TMongo.cpp
 	random_helper.cpp
 	TRedis.cpp
     TString.cpp
@@ -100,7 +100,7 @@ if (CMAKE_TOOL_TEST STREQUAL "false")
             mysqlclient
 	        hiredis
 
-			mongoclient
+			#mongoclient
             sqlite3)
 
 else()
@@ -114,8 +114,8 @@ else()
     target_link_libraries(TestTSql mysqlclient)
     target_link_libraries(TestTSql sqlite3)
 	
-	add_executable(TestTMongo TMongo.h TMongo.cpp)
-    target_link_libraries(TestTMongo mongoclient)
+	#add_executable(TestTMongo TMongo.h TMongo.cpp)
+    #target_link_libraries(TestTMongo mongoclient)
 
 	add_executable(TestTRedis TRedis.h TRedis.cpp)  #ÐÞ¸Ä
     target_link_libraries(TestTRedis hiredis)

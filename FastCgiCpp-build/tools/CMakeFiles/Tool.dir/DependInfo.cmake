@@ -13,7 +13,6 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/Cpp_Web/FastCgiCpp/tools/TFile.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TFile.cpp.o"
   "/home/Cpp_Web/FastCgiCpp/tools/TJson.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TJson.cpp.o"
   "/home/Cpp_Web/FastCgiCpp/tools/TLog.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TLog.cpp.o"
-  "/home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TMongo.cpp.o"
   "/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TRedis.cpp.o"
   "/home/Cpp_Web/FastCgiCpp/tools/TSocket.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TSocket.cpp.o"
   "/home/Cpp_Web/FastCgiCpp/tools/TSql.cpp" "/home/Cpp_Web/FastCgiCpp-build/tools/CMakeFiles/Tool.dir/TSql.cpp.o"
@@ -38,7 +37,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/Cpp_Web/FastCgiCpp/tools/."
   "/usr/include/mysql"
-  "/usr/include/mongo"
   "/usr/local/include/hiredis"
   "/home/Cpp_Web/FastCgiCpp/tools/websocketpp"
   )

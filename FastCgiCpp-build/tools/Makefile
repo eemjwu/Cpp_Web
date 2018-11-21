@@ -372,30 +372,6 @@ TLog.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TLog.cpp.s
 .PHONY : TLog.cpp.s
 
-TMongo.o: TMongo.cpp.o
-.PHONY : TMongo.o
-
-# target to build an object file
-TMongo.cpp.o:
-	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TMongo.cpp.o
-.PHONY : TMongo.cpp.o
-
-TMongo.i: TMongo.cpp.i
-.PHONY : TMongo.i
-
-# target to preprocess a source file
-TMongo.cpp.i:
-	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TMongo.cpp.i
-.PHONY : TMongo.cpp.i
-
-TMongo.s: TMongo.cpp.s
-.PHONY : TMongo.s
-
-# target to generate assembly for a file
-TMongo.cpp.s:
-	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TMongo.cpp.s
-.PHONY : TMongo.cpp.s
-
 TRedis.o: TRedis.cpp.o
 .PHONY : TRedis.o
 
@@ -604,9 +580,6 @@ help:
 	@echo "... TLog.o"
 	@echo "... TLog.i"
 	@echo "... TLog.s"
-	@echo "... TMongo.o"
-	@echo "... TMongo.i"
-	@echo "... TMongo.s"
 	@echo "... TRedis.o"
 	@echo "... TRedis.i"
 	@echo "... TRedis.s"

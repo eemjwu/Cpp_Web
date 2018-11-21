@@ -60,12 +60,6 @@ tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.cpp
 tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.h
 tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSocket.h
 
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/Singleton.h
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.h
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TMongo.h
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSocket.h
-
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./Singleton.h
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./TLog.h
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./TSocket.h

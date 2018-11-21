@@ -213,32 +213,9 @@ tools/CMakeFiles/Tool.dir/TSql.cpp.o.provides: tools/CMakeFiles/Tool.dir/TSql.cp
 
 tools/CMakeFiles/Tool.dir/TSql.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/TSql.cpp.o
 
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TMongo.cpp.o"
-	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TMongo.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp
-
-tools/CMakeFiles/Tool.dir/TMongo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tool.dir/TMongo.cpp.i"
-	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp > CMakeFiles/Tool.dir/TMongo.cpp.i
-
-tools/CMakeFiles/Tool.dir/TMongo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tool.dir/TMongo.cpp.s"
-	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp -o CMakeFiles/Tool.dir/TMongo.cpp.s
-
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o.requires:
-.PHONY : tools/CMakeFiles/Tool.dir/TMongo.cpp.o.requires
-
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o.provides: tools/CMakeFiles/Tool.dir/TMongo.cpp.o.requires
-	$(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TMongo.cpp.o.provides.build
-.PHONY : tools/CMakeFiles/Tool.dir/TMongo.cpp.o.provides
-
-tools/CMakeFiles/Tool.dir/TMongo.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/TMongo.cpp.o
-
 tools/CMakeFiles/Tool.dir/random_helper.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/random_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/random_helper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/random_helper.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/random_helper.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/random_helper.cpp
 
@@ -261,7 +238,7 @@ tools/CMakeFiles/Tool.dir/random_helper.cpp.o.provides.build: tools/CMakeFiles/T
 
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TRedis.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TRedis.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp
 
@@ -284,7 +261,7 @@ tools/CMakeFiles/Tool.dir/TRedis.cpp.o.provides.build: tools/CMakeFiles/Tool.dir
 
 tools/CMakeFiles/Tool.dir/TString.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TString.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TString.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TString.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TString.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TString.cpp
 
@@ -307,7 +284,7 @@ tools/CMakeFiles/Tool.dir/TString.cpp.o.provides.build: tools/CMakeFiles/Tool.di
 
 tools/CMakeFiles/Tool.dir/TJson.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TJson.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TJson.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TJson.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TJson.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TJson.cpp
 
@@ -330,7 +307,7 @@ tools/CMakeFiles/Tool.dir/TJson.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/
 
 tools/CMakeFiles/Tool.dir/TEncode.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TEncode.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TEncode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TEncode.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TEncode.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TEncode.cpp
 
@@ -353,7 +330,7 @@ tools/CMakeFiles/Tool.dir/TEncode.cpp.o.provides.build: tools/CMakeFiles/Tool.di
 
 tools/CMakeFiles/Tool.dir/TDateTime.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TDateTime.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TDateTime.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TDateTime.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TDateTime.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TDateTime.cpp
 
@@ -376,7 +353,7 @@ tools/CMakeFiles/Tool.dir/TDateTime.cpp.o.provides.build: tools/CMakeFiles/Tool.
 
 tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TWebSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TWebSocket.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TWebSocket.cpp
 
@@ -399,7 +376,7 @@ tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o.provides.build: tools/CMakeFiles/Tool
 
 tools/CMakeFiles/Tool.dir/Template.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/Template.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/Template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/Template.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/Template.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/Template.cpp
 
@@ -422,7 +399,7 @@ tools/CMakeFiles/Tool.dir/Template.cpp.o.provides.build: tools/CMakeFiles/Tool.d
 
 tools/CMakeFiles/Tool.dir/TFile.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
 tools/CMakeFiles/Tool.dir/TFile.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TFile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/TFile.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/TFile.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/TFile.cpp
 
@@ -452,7 +429,6 @@ Tool_OBJECTS = \
 "CMakeFiles/Tool.dir/TLog.cpp.o" \
 "CMakeFiles/Tool.dir/TSocket.cpp.o" \
 "CMakeFiles/Tool.dir/TSql.cpp.o" \
-"CMakeFiles/Tool.dir/TMongo.cpp.o" \
 "CMakeFiles/Tool.dir/random_helper.cpp.o" \
 "CMakeFiles/Tool.dir/TRedis.cpp.o" \
 "CMakeFiles/Tool.dir/TString.cpp.o" \
@@ -473,7 +449,6 @@ tools/libTool.so: tools/CMakeFiles/Tool.dir/TConf.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TLog.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TSocket.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TSql.cpp.o
-tools/libTool.so: tools/CMakeFiles/Tool.dir/TMongo.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/random_helper.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TRedis.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TString.cpp.o
@@ -499,7 +474,6 @@ tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TConf.cpp.o.requir
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TLog.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TSocket.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TSql.cpp.o.requires
-tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TMongo.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/random_helper.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TRedis.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TString.cpp.o.requires

@@ -6,7 +6,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Tool.dir/TLog.cpp.o"
   "CMakeFiles/Tool.dir/TSocket.cpp.o"
   "CMakeFiles/Tool.dir/TSql.cpp.o"
-  "CMakeFiles/Tool.dir/TMongo.cpp.o"
   "CMakeFiles/Tool.dir/random_helper.cpp.o"
   "CMakeFiles/Tool.dir/TRedis.cpp.o"
   "CMakeFiles/Tool.dir/TString.cpp.o"
