@@ -18,7 +18,7 @@ namespace WebTool
 	public:
 		TRedis(const std::string Ip, unsigned short Port = 6379);
 		TRedis() = default;
-		~TRedis() { redisFree(My_redis); };
+		~TRedis() { redisFree(this->My_redis); };
 		int InitTRedis(const std::string Ip, unsigned short Port = 6379);
 
 		void CloseRedis(redisContext * My_redis) { redisFree(My_redis); }
@@ -34,6 +34,13 @@ namespace WebTool
 		int existesKey(const char * ID);
 
 		int Hset(const char* key, const char * field1, const char * val1, const char * field = ";",...);
+
+		// 设置过期时间
+		int expiresSet(const char* key, int seconds);
+
+		// 查询过期时间 返回剩余的秒数
+		// 查询失败返回 -1
+		int ttlGet(const char* key);
 
 	private:
 		redisContext * My_redis = NULL;//连接句柄

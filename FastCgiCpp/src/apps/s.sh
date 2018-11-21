@@ -1,1 +1,0 @@
-g++ -o main -g CSql.cpp -std=c++11 -lTool -lmysqlclient -I/usr/include/mysql -I/home/liukang/workspace/FastCgiCpp/tools -L/home/liukang/workspace/FastCgiCpp-build/tools

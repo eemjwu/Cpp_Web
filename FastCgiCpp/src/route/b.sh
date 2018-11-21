@@ -1,0 +1,1 @@
+g++ -std=c++11 Session.cpp Session.h -lTool -L /home/Cpp_Web/FastCgiCpp-build/tools -I /home/Cpp_Web/FastCgiCpp/tools

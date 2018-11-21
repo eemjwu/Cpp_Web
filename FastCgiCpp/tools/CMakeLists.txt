@@ -19,6 +19,7 @@ include_directories(SYSTEM ".")
 
 include_directories("/usr/include/mysql")
 include_directories("/usr/include/mongo")
+include_directories("/usr/local/include/hiredis")
 
 include_directories("${PROJECT_SOURCE_DIR}/websocketpp")
 
@@ -26,6 +27,7 @@ add_definitions(-DLIBTOOL_EXPORTS)
 add_definitions(-D_AFXDLL)
 
 set(jsoncpp_HEAD
+
     Json/include/assertions.h
     Json/include/autolink.h
     Json/include/config.h
@@ -55,7 +57,9 @@ set(libTool_HEAD
     TSql.h
 	
 	TMongo.h
-	
+	random_helper.h
+	TRedis.h
+
     TString.h
     TJson.h
     TEncode.h
@@ -73,7 +77,8 @@ set(libTool_SRC
     TSql.cpp
 	
 	TMongo.cpp
-	
+	random_helper.cpp
+	TRedis.cpp
     TString.cpp
     TJson.cpp
     TEncode.cpp
@@ -93,6 +98,8 @@ if (CMAKE_TOOL_TEST STREQUAL "false")
             boost_system
             boost_chrono
             mysqlclient
+	        hiredis
+
 			mongoclient
             sqlite3)
 
@@ -109,6 +116,10 @@ else()
 	
 	add_executable(TestTMongo TMongo.h TMongo.cpp)
     target_link_libraries(TestTMongo mongoclient)
+
+	add_executable(TestTRedis TRedis.h TRedis.cpp)  #ÐÞ¸Ä
+    target_link_libraries(TestTRedis hiredis)
+
 
 
 #    add_executable(TestTString TString.h TString.cpp)

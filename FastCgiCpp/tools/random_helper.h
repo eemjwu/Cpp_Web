@@ -1,7 +1,7 @@
 #ifndef RANDOM_HELPER_H
 #define RANDOM_HELPER_H
 #include <iostream>
-#include <cstring>;
+#include <cstring>
 #include <stdio.h>
 #include <random_helper.h>
 #include <stdlib.h>

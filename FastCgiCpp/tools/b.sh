@@ -1,1 +1,1 @@
-g++ -g -std=c++11 -lhiredis -o main TRedis.cpp -std=c++11 -D TEST_MAIN -I /usr/local/include/hiredis 
+g++ -Wl,--no-as-needed -std=c++11 -lTool -L /home/Cpp_Web/FastCgiCpp-build/tools  TJson.cpp -o main -I . -I /usr/local/include/hiredis -D TEST_MAIN

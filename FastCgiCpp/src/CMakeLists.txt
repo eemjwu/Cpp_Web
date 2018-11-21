@@ -4,6 +4,8 @@ project (${PROJECT})
 include_directories("${PROJECT_SOURCE_DIR}/../tools")
 include_directories("${PROJECT_SOURCE_DIR}/route")
 include_directories("/usr/include/mysql")
+include_directories("/usr/local/include/hiredis")
+
 
 
 # 指定库文件路径
@@ -26,6 +28,7 @@ set(ROUTE_HEAD
     route/Request.h
     route/Cookie.h
     route/Params.h
+    route/Session.h
     )
 
 set(ROUTE_SRC
@@ -33,6 +36,7 @@ set(ROUTE_SRC
     route/Request.cpp
     route/Cookie.cpp
     route/Params.cpp
+    route/Session.cpp
     )
 
 set(APPS_HEAD

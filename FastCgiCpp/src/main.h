@@ -23,6 +23,7 @@
 #include "route/Route.h"
 #include "route/Cookie.h"
 #include "route/Params.h"
+#include "route/Session.h"
 
 #include "apps/CIndex.h"
 #include "apps/CLogin.h"
