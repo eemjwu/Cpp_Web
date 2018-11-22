@@ -1,0 +1,68 @@
+CREATE TABLE `public.information` (
+`id`  int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID' ,
+`title`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '标题' ,
+` front_cover_img`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '封面图片地址（首页）' ,
+`content`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '内容' ,
+`add_time`  timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间' ,
+PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+COMMENT='信息表'
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+
+CREATE TABLE `public.manager` (
+`id`  int(11) NOT NULL AUTO_INCREMENT COMMENT '主键Id' ,
+`login_name`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '登陆账号' ,
+`login_password`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '登陆密码' ,
+`last_login_time`  timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '最后登陆时间' ,
+`last_login_ip`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '最后登陆IP' ,
+`login_count`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '0' COMMENT '登陆次数' ,
+`is_enable`  int(11) NULL DEFAULT 1 COMMENT '账号是否启用，1=true(启用)，0=false（禁用）' ,
+`add_time`  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '注册时间' ,
+PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+COMMENT='管理员管理表'
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+
+CREATE TABLE `public.product` (
+`id`  int(11) NOT NULL AUTO_INCREMENT COMMENT '主键Id' ,
+`name`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '菜单名称或各个页面功能名称' ,
+`code`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '产品编码' ,
+`product_class_id`  int(11) NULL DEFAULT 0 COMMENT '所属产品分类' ,
+`standard`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '产品规格' ,
+`quality_guarantee_period`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '保质期' ,
+`place_of_origin`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '产地' ,
+`front_cover_img`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '封面图片地址（展示图片）' ,
+`content`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '产品描述' ,
+`is_enable`  int(11) NULL DEFAULT 0 COMMENT '是否启用，1=true(启用)，0=false（禁用）' ,
+`add_time`  timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间' ,
+PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+COMMENT='产品信息'
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+
+CREATE TABLE `public.product_class` (
+`id`  int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID' ,
+`name`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '单名称或各个页面功能名称' ,
+`is_enable`  int(11) NULL DEFAULT 0 COMMENT '是否启用，1=true(启用)，0=false（禁用）' ,
+`add_time`  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间' ,
+PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+COMMENT='产品分类'
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+
+ALTER TABLE `public.manager`
+ADD INDEX `manager_login_name_idx` (`login_name`) USING BTREE ,
+ADD INDEX `manager_last_login_time_idx` (`last_login_time`) USING BTREE ,
+ADD INDEX `manager_is_enable_idx` (`is_enable`) USING BTR
