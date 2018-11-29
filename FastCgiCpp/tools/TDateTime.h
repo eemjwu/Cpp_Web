@@ -20,14 +20,7 @@
 
 namespace WebTool {
 
-class  TDateTime
-{
-public:
-    TDateTime();
-    ~TDateTime();
 
-
-};
 
 class TDate
 {
@@ -59,6 +52,8 @@ public:
 	/// @return TDate类
 	TDate & Today();
 
+	std::string now();//获取当前时间日期  以字符串返回
+
 	//得到年与日
 	int getYear()const { return year; }
 	int getMonth()const { return month; }
@@ -69,7 +64,7 @@ public:
 	bool isLeapYear()const;   //判断是否为闰年
 	int dayofMonth(int year, int month)const;   //得到某个月的天数
 	void show()const;   //显示日期
-	std::string strftime(const char *format) const;//日期转为字符串
+	std::string mystrftime(const char *format) const;//日期转为字符串
 	TDate changeDays(const int days)const;   //改变 当前日期的  前后几天
 
 	int distance(const TDate &d)const;   //计算两个日期之间的天数

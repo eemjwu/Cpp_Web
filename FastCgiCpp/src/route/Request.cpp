@@ -4,7 +4,8 @@ Request::Request():
     m_method(""),
     m_url(""),
     m_params(""),
-    m_cookie("")
+    m_cookie(""),
+	m_ip("")
 {
 
 }
@@ -34,6 +35,13 @@ void Request::setCookie(TString str)
     m_cookie = str;
 }
 
+void Request::setIp(TString str)
+{
+	m_ip = str;
+}
+
+
+
 TString Request::getMethod()
 {
     return m_method;
@@ -54,6 +62,11 @@ TString Request::getCookie()
     return m_cookie;
 }
 
+TString Request::getIp()
+{
+	return m_ip;
+}
+
 //////////////////////////////////////////////////////
 Response::Response():
     m_contentType("text/html"),
@@ -66,6 +79,11 @@ Response::Response():
 Response::~Response()
 {
 
+}
+
+void Response::setByteData(char data[])
+{
+	memcpy(m_byteDate,data , sizeof(char) * 17646);
 }
 
 void Response::setContentType(const TString str)
@@ -89,12 +107,15 @@ TString Response::Out()
 
     TString retStr;
     retStr += "Content-type: " + m_contentType + "\r\n";
-	// retStr += "X-Accel-Redirect:/png/put.py \r\n";//新加的 test用
     retStr += strSetCookie;
     retStr += "\r\n";
 
-    DBG(L_DEBUG, "%s", retStr.c_str());
-    retStr += m_resData;
+    //DBG(L_DEBUG, "%s", retStr.c_str());
+	if (m_contentType != "image/jpg")
+	{
+		retStr += m_resData;
+	}
+
     return retStr;
 
 }

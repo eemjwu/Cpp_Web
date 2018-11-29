@@ -2,16 +2,6 @@
 
 namespace WebTool {
 
-TDateTime::TDateTime()
-{
-
-}
-
-TDateTime::~TDateTime()
-{
-
-}
-
 TDate & TDate::Today()
 {
 	time_t rawtime;
@@ -24,6 +14,19 @@ TDate & TDate::Today()
 	day = timeinfo->tm_mday;
 	return *this;
 	// TODO: 在此处插入 return 语句
+}
+
+std::string TDate::now()
+{
+	time_t rawtime;
+	struct tm *info;
+	char buffer[80];
+	rawtime = time(NULL);
+	info = localtime(&rawtime);
+	strftime(buffer, 80, "%Y-%m-%d %H:%M:%S", info);
+	std::string res = static_cast<std::string>(buffer);
+	return res;
+	
 }
 
 void TDate::setDate(int year, int month, int day)
@@ -77,7 +80,7 @@ void TDate::show() const
 	std::cout << year << "-" << month << "-" << day << std::endl;
 }
 
-std::string TDate::strftime(const char * format) const
+std::string TDate::mystrftime(const char * format) const
 {
 	std::string res;
 	char buffer[80];
@@ -291,7 +294,6 @@ std::istream & operator>>(std::istream & in, TDate & d)
 	return in;
 	// TODO: 在此处插入 return 语句
 }
-
 } //namespace WebTool
 
 // TEST

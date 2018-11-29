@@ -60,9 +60,6 @@ tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.cpp
 tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.h
 tools/CMakeFiles/Tool.dir/TLog.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSocket.h
 
-tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./Singleton.h
-tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./TLog.h
-tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/./TSocket.h
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TRedis.h
 tools/CMakeFiles/Tool.dir/TRedis.cpp.o: /usr/local/include/hiredis/hiredis.h
@@ -86,6 +83,7 @@ tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSql.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TString.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TWebSocket.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/ToolGlobal.h
+tools/CMakeFiles/Tool.dir/TSql.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/web_helper.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /usr/include/mysql/big_endian.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /usr/include/mysql/byte_order_generic.h
 tools/CMakeFiles/Tool.dir/TSql.cpp.o: /usr/include/mysql/byte_order_generic_x86.h
@@ -189,6 +187,41 @@ tools/CMakeFiles/Tool.dir/Template.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TString
 tools/CMakeFiles/Tool.dir/Template.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/Template.cpp
 tools/CMakeFiles/Tool.dir/Template.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/Template.h
 
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.cpp
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.h
+
 tools/CMakeFiles/Tool.dir/random_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/random_helper.cpp
 tools/CMakeFiles/Tool.dir/random_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/random_helper.h
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/Singleton.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TConf.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TDateTime.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TEncode.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TJson.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TLog.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSocket.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TSql.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TString.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/TWebSocket.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/ToolGlobal.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/web_helper.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/big_endian.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/byte_order_generic.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/byte_order_generic_x86.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/byte_order_generic_x86_64.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/little_endian.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_alloc.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_attribute.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_byteorder.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_compiler.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_config.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_dbug.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_global.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/my_list.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/mysql.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/mysql_com.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/mysql_time.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/mysql_version.h
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /usr/include/mysql/typelib.h
 

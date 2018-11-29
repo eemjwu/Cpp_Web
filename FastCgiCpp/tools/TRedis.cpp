@@ -1,7 +1,7 @@
 #include "TRedis.h"
-#include<TLog.h>
 #include<string>
 #include<iostream>
+#include<string.h>
 
 
 using namespace std;
@@ -15,11 +15,10 @@ namespace WebTool
 		My_redis = redisConnect(m_sIp.c_str(), m_uiPort);
 		if (My_redis == NULL || My_redis->err)
 		{
-			DBG(L_DEBUG, "redis连接失败");
+			//DBG(L_DEBUG, "redis连接失败");
 			cout << "失败" << endl;
 			exit(1);
 		}
-		DBG(L_DEBUG, "redis连接成功");
 		cout << "成功" << endl;
 	}
 
@@ -32,28 +31,24 @@ namespace WebTool
 		My_redis = redisConnect(m_sIp.c_str(), m_uiPort);
 		if (My_redis == NULL || My_redis->err)
 		{
-			DBG(L_DEBUG, "redis连接失败");
+			//DBG(L_DEBUG, "redis连接失败");
 			std::cout << "失败" << endl;
 			return -1;
 		}
-		DBG(L_DEBUG, "redis连接成功");
+		//DBG(L_DEBUG, "redis连接成功");
 		std::cout << "成功" << endl;
 		return 0;
 	}
 
 	int TRedis::Hget(unordered_map<string, string>& res, const char * key, const char * field, ...)
 	{
-		
 		// 处理：HGETALL key
-		char * tmp = ";";
+		char *tmp = ";";
 		if (strcmp(field,tmp) == 0)
 		{
-			
 			redisReply* reply = (redisReply *)redisCommand(My_redis, "HGETALL %s", key);
-			
 			if (reply->type == REDIS_REPLY_ARRAY)//存在数据
 			{	
-				
 				for (int len = 0; len < reply->elements; len++)
 				{
 					string key = reply->element[len]->str;
@@ -63,16 +58,17 @@ namespace WebTool
 					//cout << reply->element[len]->str << endl;
 				}
 				freeReplyObject(reply);
-				return 0;
+				return 1;
 			}
 			//不存在数据
 			freeReplyObject(reply);
 			return -1;
 		}
 		else
-		{	
-			va_list pvar;	
-			va_start(pvar, field);		
+		{
+			va_list pvar;
+			va_start(pvar, field);
+
 			char * p = va_arg(pvar, char *);
 			if (strcmp(p, tmp) == 0)	// 处理：HGET key field
 			{
@@ -93,19 +89,14 @@ namespace WebTool
 			}
 			else// 处理：HMGET key field1 [field2] 
 			{
-				
 				vector<char *> param;
-				int t = 0;//控制循环
 				do
 				{
-					++t;
 					param.push_back(p);
 					p = va_arg(pvar, char *);
-				} while ((strcmp(p, tmp) != 0) && t<10);
-				if (t == 10) return -1;
-				
+				} while (strcmp(p, tmp) != 0);
+
 				string req = "HMGET " + static_cast<string>(key) + " " +static_cast<string>(field);
-		
 				for (int i = 0; i < param.size(); i++)
 				{
 					req = req + " " + param[i];
@@ -148,14 +139,13 @@ namespace WebTool
 
 	
 		}
-
 		return -1;
 	}
 
 	int TRedis::Hdel(const char * key, const char * field, ...)
 	{
-		char * tmp = ";";
 		// 处理：HGETALL key
+		char *tmp = ";";
 		if (strcmp(field, tmp) == 0)
 		{
 			redisReply* reply = (redisReply *)redisCommand(My_redis, "DEL %s", key);
@@ -243,10 +233,10 @@ namespace WebTool
 		return res;
 	}
 
-	int TRedis::Hset(const char * key, const char * field1, const char * val1, const char * field,...)
+	int TRedis::Hset(const char * key, const char * field1, const char * val1, const char * field, ...)
 	{
-		char * tmp = ";";
 		// 处理：HSET key field1 val1
+		char *tmp = ";";
 		if (strcmp(field, tmp) == 0)
 		{
 			redisReply* reply = (redisReply *)redisCommand(My_redis, "HSET %s %s %s", key,field1,val1);
@@ -293,6 +283,33 @@ namespace WebTool
 			return -1;
 
 		}
+		return -1;
+	}
+
+	int TRedis::Set(const char * key, const char * val)
+	{
+		redisReply* reply = (redisReply *)redisCommand(My_redis, "SET %s %s", key, val);
+		if (reply->type != REDIS_REPLY_ERROR)//没有返回错误 表示成功
+		{
+			freeReplyObject(reply);
+			return 0;
+
+		}
+		//失败
+		freeReplyObject(reply);
+		return -1;
+	}
+
+	int TRedis::Get(std::string& res, const char * key)
+	{
+		redisReply* reply = (redisReply *)redisCommand(My_redis, "GET %s", key);
+		if (reply->type != REDIS_REPLY_NIL)
+		{
+			res = string(reply->str);
+			freeReplyObject(reply);
+			return 0;
+		}
+		freeReplyObject(reply);
 		return -1;
 	}
 

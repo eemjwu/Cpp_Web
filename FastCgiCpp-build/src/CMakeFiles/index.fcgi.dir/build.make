@@ -259,9 +259,32 @@ src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o.provides: src/CMakeFiles/index.fcg
 
 src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o.provides.build: src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o
 
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o: src/CMakeFiles/index.fcgi.dir/flags.make
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o: /home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o"
+	cd /home/Cpp_Web/FastCgiCpp-build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o -c /home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp
+
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/index.fcgi.dir/apps/Verify.cpp.i"
+	cd /home/Cpp_Web/FastCgiCpp-build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp > CMakeFiles/index.fcgi.dir/apps/Verify.cpp.i
+
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/index.fcgi.dir/apps/Verify.cpp.s"
+	cd /home/Cpp_Web/FastCgiCpp-build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp -o CMakeFiles/index.fcgi.dir/apps/Verify.cpp.s
+
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.requires:
+.PHONY : src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.requires
+
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.provides: src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.provides.build
+.PHONY : src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.provides
+
+src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.provides.build: src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o
+
 src/CMakeFiles/index.fcgi.dir/main.cpp.o: src/CMakeFiles/index.fcgi.dir/flags.make
 src/CMakeFiles/index.fcgi.dir/main.cpp.o: /home/Cpp_Web/FastCgiCpp/src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/index.fcgi.dir/main.cpp.o"
 	cd /home/Cpp_Web/FastCgiCpp-build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/index.fcgi.dir/main.cpp.o -c /home/Cpp_Web/FastCgiCpp/src/main.cpp
 
@@ -293,6 +316,7 @@ index_fcgi_OBJECTS = \
 "CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.o" \
 "CMakeFiles/index.fcgi.dir/apps/CArticle.cpp.o" \
 "CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o" \
+"CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o" \
 "CMakeFiles/index.fcgi.dir/main.cpp.o"
 
 # External object files for target index.fcgi
@@ -307,6 +331,7 @@ bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/apps/CIndex.cpp.o
 bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.o
 bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/apps/CArticle.cpp.o
 bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o
+bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o
 bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/main.cpp.o
 bin/index.fcgi: src/CMakeFiles/index.fcgi.dir/build.make
 bin/index.fcgi: tools/libTool.so
@@ -327,6 +352,7 @@ src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/apps/CInde
 src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.o.requires
 src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/apps/CArticle.cpp.o.requires
 src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o.requires
+src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o.requires
 src/CMakeFiles/index.fcgi.dir/requires: src/CMakeFiles/index.fcgi.dir/main.cpp.o.requires
 .PHONY : src/CMakeFiles/index.fcgi.dir/requires
 

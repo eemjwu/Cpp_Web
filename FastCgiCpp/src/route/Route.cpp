@@ -1,5 +1,6 @@
 #include "Route.h"
 #include "memory.h"
+#include "Request.h"
 
 //#define THREAD_COUNT 20
 //static int counts[THREAD_COUNT];
@@ -105,16 +106,18 @@ void Route::processMessage(int threadID)
         pthread_mutex_unlock(&accept_mutex);
         if (rc < 0)
             break;
-
-		// test
-		std::string X;
+		/*********************************************************************************/
+		/*********** 读取客户端信息 ******************************************************/
+		/*********************************************************************************/
+	
+		std::string clientIp;
 		if (FCGX_GetParam("X-Forwarded-For", request.envp))
-			X = std::string(FCGX_GetParam("X-Forwarded-For", request.envp));
-		DBG(L_DEBUG, "X-Forwarded-For: %s", X.c_str());
-		std::string H;
+			clientIp = std::string(FCGX_GetParam("X-Forwarded-For", request.envp));
+		
+		/*std::string H;
 		if (FCGX_GetParam("Host", request.envp))
 			H = std::string(FCGX_GetParam("Host", request.envp));
-		DBG(L_DEBUG, "Host: %s", H.c_str());
+		DBG(L_DEBUG, "Host: %s", H.c_str());*/
 
         std::string httpCookie;
         if(FCGX_GetParam("HTTP_COOKIE", request.envp))
@@ -130,8 +133,38 @@ void Route::processMessage(int threadID)
         if(FCGX_GetParam("REQUEST_URI", request.envp))
             requestUri = TString(FCGX_GetParam("REQUEST_URI", request.envp));
 
+		/*********************************************************************************/
+		/*********************************************************************************/
 
+		// 过滤不用做任何操作的路由（即过滤不用进行判断是否登录和记录日志的url）
+		if ((requestUri != "/favicon.ico") && (requestUri != "/") && (requestUri != "/api/verify/"))
+		{
+			// 记录客户端提交的参数
+			DBG(L_DEBUG, "url: %s ip:%s", requestUri.c_str(), clientIp.c_str());
 
+			// 过滤不用进行登录权限判断的路由（登录与退出登录不用检查是否已经登录）
+			if ((requestUri == "/api/login/") || (requestUri == "/api/logout/"))
+			{
+				;
+			}
+			else
+			{
+				;//test
+				////已经登录成功的用户session肯定有值，没有值的就是未登录
+				//Cookie cookie(httpCookie);
+				//std::string sessionId = cookie["sessionId"];
+				//if (MySession->existSessionId(sessionId) != 0 || MySession->getSessionTTL < 5)//不存在sessionID  或者剩余时间短 登录已失效 返回登录界面
+				//{
+				//	TString res;
+				//	res += "X-Accel-Redirect: /login.html\r\n";
+				//	FCGX_PutS(res.c_str(), request.out);
+				//}
+			}
+		}
+
+		/*******************************************************************************************************/
+		/**************获取用户提交的参数***********************************************************************/
+		/*******************************************************************************************************/
         size_t pos = requestUri.find_first_of("?");
         TString requestRoute = requestUri.left(pos);
         TString requestParam;
@@ -150,12 +183,11 @@ void Route::processMessage(int threadID)
                 char *bufpost = (char* )malloc(ilen);
                 memset(bufpost, 0, ilen);
                 FCGX_GetStr(bufpost,ilen,request.in);
-                requestParam = TString(bufpost);
+                requestParam = TString(bufpost);//转为字符！！
                 free(bufpost);
             }
         }
-
-        RouteMap::iterator iterMap;;
+        RouteMap::iterator iterMap;
         iterMap = m_routeMap.find(requestRoute);
         if(iterMap == m_routeMap.end())
         {
@@ -170,8 +202,15 @@ void Route::processMessage(int threadID)
             req.setUrl(requestRoute);
             req.setParams(requestParam);
             req.setCookie(httpCookie);
+			req.setIp(clientIp);
             Response res = func(req);
-            FCGX_PutS(res.Out().c_str(), request.out);
+			if(requestRoute != "/api/verify/")
+				FCGX_PutS(res.Out().c_str(), request.out);
+			else
+			{
+				FCGX_PutS(res.Out().c_str(), request.out);
+				FCGX_PutStr(res.m_byteDate, 17646, request.out);
+			}
 
 //            DBG(L_DEBUG, "res.Out: %s", res.Out().c_str());
         }

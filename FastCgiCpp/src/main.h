@@ -23,12 +23,15 @@
 #include "route/Route.h"
 #include "route/Cookie.h"
 #include "route/Params.h"
+#include "route/Request.h"
 #include "route/Session.h"
+
 
 #include "apps/CIndex.h"
 #include "apps/CLogin.h"
 #include "apps/CArticle.h"
 #include  "apps/CSql.h"
+#include "apps/Verify.h"
 
 #include "TEncode.h"
 #include "TConf.h"

@@ -21,8 +21,8 @@ int Session::InitSession(int cookie_expires, const std::string& ip, unsigned sho
 bool Session::existSessionId(const std::string & session_id)
 {
 	if (myredis.existesKey(session_id.c_str()) == 0)
-		return 1;
-	return false;
+		return 0;
+	return -1;
 }
 
 std::string Session::getSession(const std::string & session_id)
@@ -30,7 +30,8 @@ std::string Session::getSession(const std::string & session_id)
 	
 	string jsonRes;
 	unordered_map<string, string> tmp;
-	
+
+	update_expire_time(session_id);// 每查询一次 更新时间
 	if (myredis.Hget(tmp, session_id.c_str(),";") != 0)
 	{
 		return "";
@@ -47,22 +48,49 @@ std::string Session::addSessionID(const std::string& conversasionID)
 	string sessionId;
 	random_helper tmp;
 	sessionId = static_cast<string>(tmp.get_string(4)) + conversasionID;//产生唯一的sessionId
-	if (myredis.Hset(sessionId.c_str(), "login_name", "$", "verify_code", "$", ";") != 0) return "";
+	if (myredis.Hset(sessionId.c_str(), "login_name", "$", ";") != 0) return "";
 	if (myredis.expiresSet(sessionId.c_str(), this->expire_time) != 0) return "";
 	return sessionId;
 }
 
-bool Session::setVerify(const std::string & session_id, WebTool::TString & verify)
+bool Session::setVerify(WebTool::TString & verify)
 {
 	verify.toUpper();
-	if (myredis.Hset(session_id.c_str(), "verify_code", verify.c_str(), ";") != 0) return false;
+	if (myredis.Set("verify_code", verify.c_str()) != 0)return false;
 	return true;
+}
+
+std::string Session::getVerify()
+{
+	std::string res;
+	if (myredis.Get(res, "verify_code") == 0)
+	{
+		return res;
+	}
+	else
+		return "";
+}
+
+void Session::delVerify()
+{
+	myredis.Hdel("verify_code", ";");
 }
 
 bool Session::setLoginName(const std::string & session_id, const std::string & login_name)
 {
 	if (myredis.Hset(session_id.c_str(), "login_name", login_name.c_str(), ";") != 0) return false;
 	return true;
+}
+
+int Session::getSessionTTL(const std::string & session_id)
+{
+	
+	return myredis.ttlGet(session_id.c_str());
+}
+
+void Session::update_expire_time(std::string sessionid)
+{
+	myredis.expiresSet(sessionid.c_str(), expire_time);// EXPIRE key seconds
 }
 
 #ifdef TEST_MAIN

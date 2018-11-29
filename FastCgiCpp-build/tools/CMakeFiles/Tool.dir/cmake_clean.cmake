@@ -15,6 +15,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Tool.dir/TWebSocket.cpp.o"
   "CMakeFiles/Tool.dir/Template.cpp.o"
   "CMakeFiles/Tool.dir/TFile.cpp.o"
+  "CMakeFiles/Tool.dir/libcaptcha.cpp.o"
+  "CMakeFiles/Tool.dir/web_helper.cpp.o"
   "libTool.pdb"
   "libTool.so"
 )

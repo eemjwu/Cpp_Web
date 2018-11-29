@@ -35,6 +35,9 @@ namespace WebTool
 
 		int Hset(const char* key, const char * field1, const char * val1, const char * field = ";",...);
 
+		int Set(const char* key, const char * val);
+
+		int Get(std::string &res, const char* key);
 		// 设置过期时间
 		int expiresSet(const char* key, int seconds);
 

@@ -67,6 +67,8 @@ set(libTool_HEAD
     TWebSocket.h
     Template.h
     TFile.h
+	libcaptcha.h
+	web_helper.h
     )
 
 set(libTool_SRC
@@ -86,6 +88,8 @@ set(libTool_SRC
     TWebSocket.cpp
     Template.cpp
     TFile.cpp
+	libcaptcha.cpp
+	web_helper.cpp
     )
 
 if (CMAKE_TOOL_TEST STREQUAL "false")

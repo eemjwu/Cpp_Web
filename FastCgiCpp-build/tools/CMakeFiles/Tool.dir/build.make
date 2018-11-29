@@ -420,6 +420,52 @@ tools/CMakeFiles/Tool.dir/TFile.cpp.o.provides: tools/CMakeFiles/Tool.dir/TFile.
 
 tools/CMakeFiles/Tool.dir/TFile.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/TFile.cpp.o
 
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/libcaptcha.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.cpp
+
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tool.dir/libcaptcha.cpp.i"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.cpp > CMakeFiles/Tool.dir/libcaptcha.cpp.i
+
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tool.dir/libcaptcha.cpp.s"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/Cpp_Web/FastCgiCpp/tools/libcaptcha.cpp -o CMakeFiles/Tool.dir/libcaptcha.cpp.s
+
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.requires:
+.PHONY : tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.requires
+
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.provides: tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.requires
+	$(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.provides.build
+.PHONY : tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.provides
+
+tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: tools/CMakeFiles/Tool.dir/flags.make
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o: /home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/Cpp_Web/FastCgiCpp-build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object tools/CMakeFiles/Tool.dir/web_helper.cpp.o"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Tool.dir/web_helper.cpp.o -c /home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tool.dir/web_helper.cpp.i"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp > CMakeFiles/Tool.dir/web_helper.cpp.i
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tool.dir/web_helper.cpp.s"
+	cd /home/Cpp_Web/FastCgiCpp-build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp -o CMakeFiles/Tool.dir/web_helper.cpp.s
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o.requires:
+.PHONY : tools/CMakeFiles/Tool.dir/web_helper.cpp.o.requires
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o.provides: tools/CMakeFiles/Tool.dir/web_helper.cpp.o.requires
+	$(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/web_helper.cpp.o.provides.build
+.PHONY : tools/CMakeFiles/Tool.dir/web_helper.cpp.o.provides
+
+tools/CMakeFiles/Tool.dir/web_helper.cpp.o.provides.build: tools/CMakeFiles/Tool.dir/web_helper.cpp.o
+
 # Object files for target Tool
 Tool_OBJECTS = \
 "CMakeFiles/Tool.dir/Json/src/json_reader.cpp.o" \
@@ -437,7 +483,9 @@ Tool_OBJECTS = \
 "CMakeFiles/Tool.dir/TDateTime.cpp.o" \
 "CMakeFiles/Tool.dir/TWebSocket.cpp.o" \
 "CMakeFiles/Tool.dir/Template.cpp.o" \
-"CMakeFiles/Tool.dir/TFile.cpp.o"
+"CMakeFiles/Tool.dir/TFile.cpp.o" \
+"CMakeFiles/Tool.dir/libcaptcha.cpp.o" \
+"CMakeFiles/Tool.dir/web_helper.cpp.o"
 
 # External object files for target Tool
 Tool_EXTERNAL_OBJECTS =
@@ -458,6 +506,8 @@ tools/libTool.so: tools/CMakeFiles/Tool.dir/TDateTime.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/Template.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/TFile.cpp.o
+tools/libTool.so: tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o
+tools/libTool.so: tools/CMakeFiles/Tool.dir/web_helper.cpp.o
 tools/libTool.so: tools/CMakeFiles/Tool.dir/build.make
 tools/libTool.so: tools/CMakeFiles/Tool.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libTool.so"
@@ -483,6 +533,8 @@ tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TDateTime.cpp.o.re
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TWebSocket.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/Template.cpp.o.requires
 tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/TFile.cpp.o.requires
+tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o.requires
+tools/CMakeFiles/Tool.dir/requires: tools/CMakeFiles/Tool.dir/web_helper.cpp.o.requires
 .PHONY : tools/CMakeFiles/Tool.dir/requires
 
 tools/CMakeFiles/Tool.dir/clean:

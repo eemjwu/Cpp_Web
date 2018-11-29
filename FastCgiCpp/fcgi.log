@@ -1,33 +1,253 @@
-2018-11-21 11:02:23.884511 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-21 11:02:23.884617 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
-2018-11-21 11:02:23.884644 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.h:Session():29  session 初始化成功
-2018-11-21 11:02:23.884847 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():31  id 71fl1
-2018-11-21 11:02:23.885210 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():38  verify:$
-2018-11-21 11:02:23.885218 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():39  login_name:$
-2018-11-21 11:02:23.885345 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():48  verify:ABCD
-2018-11-21 11:02:23.885352 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():49  login_name:wmj
-2018-11-21 11:02:23.889157 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
-2018-11-21 11:02:23.889169 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():59  初始化成功
-2018-11-21 11:22:46.051761 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-21 11:22:46.054534 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
-2018-11-21 11:22:46.054547 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
-2018-11-21 11:22:46.054649 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
-2018-11-21 11:22:46.054658 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
-2018-11-21 11:22:46.054663 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():39  初始化成功
-2018-11-21 11:25:09.985785 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-21 11:25:09.987406 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TMongo.cpp:InitTMongo():28  mongo初始化成功
-2018-11-21 11:25:09.987417 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
-2018-11-21 11:25:09.987601 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
-2018-11-21 11:25:09.987617 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
-2018-11-21 11:25:09.987623 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():39  初始化成功
-2018-11-21 11:25:09.987980 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():42  ID 366v1
-2018-11-21 16:01:49.841456 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-21 16:01:49.845004 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
-2018-11-21 16:01:49.845120 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
-2018-11-21 16:01:49.845129 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
-2018-11-21 16:01:49.845133 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
-2018-11-21 19:16:18.840802 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-21 19:16:18.846017 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
-2018-11-21 19:16:18.846224 [Debug]/home/Cpp_Web/FastCgiCpp/tools/TRedis.cpp:InitTRedis():39  redis连接成功
-2018-11-21 19:16:18.846236 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
-2018-11-21 19:16:18.846241 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:31:51.592981 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:31:51.596672 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:31:51.596982 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:31:51.597162 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:31:51.597183 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:32:02.212888 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:32:02.213265 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=Fl5c
+2018-11-29 22:32:02.213881 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:32:02.216319 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:32:02.216449 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:32:02.219190 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:32:02.219334 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:32:02.220709 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:32:02.587216 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/about/ ip:218.192.168.196
+2018-11-29 22:32:02.587353 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():194  not find route: /api/about/ 
+2018-11-29 22:32:53.349905 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:32:53.352719 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:32:53.352956 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:32:53.353069 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:32:53.353085 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:33:01.564221 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:33:01.564467 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=4L97
+2018-11-29 22:33:01.565199 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:33:01.567750 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:33:01.567892 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:33:01.569735 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:33:01.569869 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:33:01.571333 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:33:01.583098 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?64.41143314599664 ip:218.192.168.196
+2018-11-29 22:33:01.583290 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 64.41143314599664, cookie: 
+2018-11-29 22:33:01.585221 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: idwvq
+2018-11-29 22:34:12.437576 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:34:12.447252 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:34:12.448296 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:34:12.448832 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:34:12.448886 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:34:27.394239 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:34:27.398357 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:34:27.398747 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:34:27.399009 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:34:27.399031 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:34:29.709157 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:34:29.709391 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=eNM0
+2018-11-29 22:34:29.709982 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:34:29.712070 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:34:29.712183 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:34:29.714185 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:34:29.714320 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:34:29.716567 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:34:29.724502 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?11.436963843737757 ip:218.192.168.196
+2018-11-29 22:34:29.724704 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 11.436963843737757, cookie: 
+2018-11-29 22:34:29.726568 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: thonb
+2018-11-29 22:37:08.398335 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:37:08.398497 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=OAO8
+2018-11-29 22:37:08.398796 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:37:08.400883 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:37:08.400979 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:37:08.402684 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:37:08.402911 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:37:08.404312 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:37:08.413283 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?50.08579547659142 ip:218.192.168.196
+2018-11-29 22:37:08.413456 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 50.08579547659142, cookie: 
+2018-11-29 22:37:08.415139 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: wdmui
+2018-11-29 22:37:09.442982 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:37:09.443141 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=9EJz
+2018-11-29 22:37:09.443529 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:37:09.445216 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:37:09.445310 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:37:09.446826 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:37:09.446967 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:37:09.448103 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:37:09.455333 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?92.46874425085203 ip:218.192.168.196
+2018-11-29 22:37:09.455508 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 92.46874425085203, cookie: 
+2018-11-29 22:37:09.457315 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: hsfns
+2018-11-29 22:37:22.470281 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:37:22.478582 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:37:22.479469 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:37:22.479832 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:37:22.479884 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:37:24.082280 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:37:24.082512 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=aaaa, cookie: password=; sessionId=O3aO
+2018-11-29 22:37:24.083096 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:37:24.085115 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:37:24.085228 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:37:24.087193 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:37:24.087326 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:37:24.089372 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:37:24.304131 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/about/ ip:218.192.168.196
+2018-11-29 22:37:24.304265 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():194  not find route: /api/about/ 
+2018-11-29 22:58:28.892685 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 22:58:28.899768 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 22:58:28.900482 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 22:58:28.900660 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 22:58:28.900695 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 22:58:30.594577 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: , cookie: 
+2018-11-29 22:58:30.599240 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: tbpvw
+2018-11-29 22:58:45.383656 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:58:45.384171 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1234&verify=11111, cookie: password=; sessionId=ov3K
+2018-11-29 22:58:45.384664 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:58:45.386859 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:58:45.387095 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '1234'
+2018-11-29 22:58:45.390420 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():57  验证失败
+2018-11-29 22:58:47.207213 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?38.14198639115194 ip:218.192.168.196
+2018-11-29 22:58:47.207456 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 38.14198639115194, cookie: 
+2018-11-29 22:58:47.209636 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: alddj
+2018-11-29 22:58:52.951162 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 22:58:52.951319 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=11111, cookie: password=; sessionId=ov3K
+2018-11-29 22:58:52.951512 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 22:58:52.953061 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 22:58:52.953150 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 22:58:52.954850 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 22:58:52.954967 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 22:58:52.956212 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 22:58:53.153385 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/about/ ip:218.192.168.196
+2018-11-29 22:58:53.153534 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():194  not find route: /api/about/ 
+2018-11-29 23:03:34.491894 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-11-29 23:03:34.499738 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-11-29 23:03:34.500442 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-11-29 23:03:34.500766 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-11-29 23:03:34.500816 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-11-29 23:03:43.363284 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:03:43.363863 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=11111, cookie: password=; sessionId=17l9
+2018-11-29 23:03:43.364507 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:03:43.373259 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?93.40952956119098 ip:218.192.168.196
+2018-11-29 23:03:43.373478 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 93.40952956119098, cookie: 
+2018-11-29 23:03:43.375397 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: nkjpo
+2018-11-29 23:03:44.975468 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:03:44.975624 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=11111, cookie: password=; sessionId=17l9
+2018-11-29 23:03:44.975817 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:03:44.987146 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?68.12464324814506 ip:218.192.168.196
+2018-11-29 23:03:44.987330 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 68.12464324814506, cookie: 
+2018-11-29 23:03:44.988863 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: pqdxu
+2018-11-29 23:03:45.725944 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:03:45.726216 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=11111, cookie: password=; sessionId=17l9
+2018-11-29 23:03:45.726411 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:03:45.735131 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?45.94999117191478 ip:218.192.168.196
+2018-11-29 23:03:45.735314 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 45.94999117191478, cookie: 
+2018-11-29 23:03:45.736959 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: tnvsn
+2018-11-29 23:03:49.413413 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?18.71493342803925 ip:218.192.168.196
+2018-11-29 23:03:49.413617 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 18.71493342803925, cookie: 
+2018-11-29 23:03:49.415398 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: hqanf
+2018-11-29 23:03:51.845213 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?63.336629991442585 ip:218.192.168.196
+2018-11-29 23:03:51.845520 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 63.336629991442585, cookie: 
+2018-11-29 23:03:51.847471 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: akpll
+2018-11-29 23:03:58.176468 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:03:58.176655 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=akpll, cookie: password=; sessionId=17l9
+2018-11-29 23:03:58.176849 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:03:58.178547 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 23:03:58.178638 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 23:03:58.180862 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 23:03:58.180996 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 23:03:58.182326 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 23:03:58.389651 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/about/ ip:218.192.168.196
+2018-11-29 23:03:58.389773 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():194  not find route: /api/about/ 
+2018-11-29 23:04:03.769705 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: , cookie: 
+2018-11-29 23:04:03.771725 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: rockm
+2018-11-29 23:04:14.399312 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?47.74932170477317 ip:218.192.168.196
+2018-11-29 23:04:14.399453 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 47.74932170477317, cookie: 
+2018-11-29 23:04:14.401433 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: wcfaj
+2018-11-29 23:04:18.943281 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:04:18.943420 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1233&verify=wcfai, cookie: password=; sessionId=1KmK
+2018-11-29 23:04:18.943605 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:04:18.951901 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?71.81547082611661 ip:218.192.168.196
+2018-11-29 23:04:18.952015 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 71.81547082611661, cookie: 
+2018-11-29 23:04:18.953456 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: qtiar
+2018-11-29 23:04:22.432126 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?16.066699080100456 ip:218.192.168.196
+2018-11-29 23:04:22.432337 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 16.066699080100456, cookie: 
+2018-11-29 23:04:22.434201 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: wwoat
+2018-11-29 23:04:24.646329 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?49.53013576507364 ip:218.192.168.196
+2018-11-29 23:04:24.646471 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 49.53013576507364, cookie: 
+2018-11-29 23:04:24.647920 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: phvfh
+2018-11-29 23:04:31.438688 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:04:31.438836 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1233&verify=pbvfh, cookie: password=; sessionId=1KmK
+2018-11-29 23:04:31.439029 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:04:31.448563 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?75.14390451450576 ip:218.192.168.196
+2018-11-29 23:04:31.448686 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 75.14390451450576, cookie: 
+2018-11-29 23:04:31.452855 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: acaiy
+2018-11-29 23:04:33.278036 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?21.466387086540472 ip:218.192.168.196
+2018-11-29 23:04:33.278211 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 21.466387086540472, cookie: 
+2018-11-29 23:04:33.279949 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: ymlku
+2018-11-29 23:04:34.557771 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?8.84020178871463 ip:218.192.168.196
+2018-11-29 23:04:34.557980 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 8.84020178871463, cookie: 
+2018-11-29 23:04:34.559615 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: jijcj
+2018-11-29 23:04:35.845314 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?5.990972319835186 ip:218.192.168.196
+2018-11-29 23:04:35.845465 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 5.990972319835186, cookie: 
+2018-11-29 23:04:35.847138 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: pkcta
+2018-11-29 23:04:37.093753 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?38.12451942233914 ip:218.192.168.196
+2018-11-29 23:04:37.093899 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 38.12451942233914, cookie: 
+2018-11-29 23:04:37.095736 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: nbyqm
+2018-11-29 23:04:38.941210 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?31.3145752496766 ip:218.192.168.196
+2018-11-29 23:04:38.941394 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 31.3145752496766, cookie: 
+2018-11-29 23:04:38.943489 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: rlavk
+2018-11-29 23:04:39.893004 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?1.6672149783993229 ip:218.192.168.196
+2018-11-29 23:04:39.893253 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 1.6672149783993229, cookie: 
+2018-11-29 23:04:39.894813 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: oclwc
+2018-11-29 23:04:41.302782 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?23.63360486535424 ip:218.192.168.196
+2018-11-29 23:04:41.302920 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 23.63360486535424, cookie: 
+2018-11-29 23:04:41.304511 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: dahhb
+2018-11-29 23:04:42.454993 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?1.4701340560172138 ip:218.192.168.196
+2018-11-29 23:04:42.455134 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 1.4701340560172138, cookie: 
+2018-11-29 23:04:42.456638 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: acsql
+2018-11-29 23:04:43.422177 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?32.59366104522583 ip:218.192.168.196
+2018-11-29 23:04:43.422319 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 32.59366104522583, cookie: 
+2018-11-29 23:04:43.423934 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: srhpo
+2018-11-29 23:04:44.309253 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?87.68505249400368 ip:218.192.168.196
+2018-11-29 23:04:44.309387 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 87.68505249400368, cookie: 
+2018-11-29 23:04:44.311051 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: lppqa
+2018-11-29 23:04:44.998973 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?35.621544271450304 ip:218.192.168.196
+2018-11-29 23:04:44.999116 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 35.621544271450304, cookie: 
+2018-11-29 23:04:45.000864 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: bdwvx
+2018-11-29 23:04:53.687597 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:04:53.687739 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1233&verify=bdwvx, cookie: password=; sessionId=1KmK
+2018-11-29 23:04:53.688060 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:04:53.690031 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 23:04:53.690133 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '1233'
+2018-11-29 23:04:53.691784 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():57  验证失败
+2018-11-29 23:04:53.698069 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?15.603048754329961 ip:218.192.168.196
+2018-11-29 23:04:53.698517 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 15.603048754329961, cookie: 
+2018-11-29 23:04:53.700040 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: ypjdw
+2018-11-29 23:06:37.088737 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:06:37.088899 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1233&verify=bdwvx, cookie: password=; sessionId=1KmK
+2018-11-29 23:06:37.089093 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:06:37.096318 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?8.961436751980223 ip:218.192.168.196
+2018-11-29 23:06:37.096434 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 8.961436751980223, cookie: 
+2018-11-29 23:06:37.098213 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: fsvaa
+2018-11-29 23:06:44.342551 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:06:44.342693 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=1233&verify=fsvaa, cookie: password=; sessionId=1KmK
+2018-11-29 23:06:44.342885 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:06:44.345084 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 23:06:44.345178 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '1233'
+2018-11-29 23:06:44.346637 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():57  验证失败
+2018-11-29 23:06:44.356513 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?14.489110818298311 ip:218.192.168.196
+2018-11-29 23:06:44.356644 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 14.489110818298311, cookie: 
+2018-11-29 23:06:44.358065 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: cqtba
+2018-11-29 23:06:50.333560 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?60.614616118907264 ip:218.192.168.196
+2018-11-29 23:06:50.333699 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 60.614616118907264, cookie: 
+2018-11-29 23:06:50.335195 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: thoro
+2018-11-29 23:06:51.686167 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?96.51914444859403 ip:218.192.168.196
+2018-11-29 23:06:51.686310 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 96.51914444859403, cookie: 
+2018-11-29 23:06:51.687933 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: doyyt
+2018-11-29 23:06:53.237203 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/verify/?87.51862663836472 ip:218.192.168.196
+2018-11-29 23:06:53.237341 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 87.51862663836472, cookie: 
+2018-11-29 23:06:53.239045 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: rdxhr
+2018-11-29 23:07:00.301989 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/login/ ip:218.192.168.196
+2018-11-29 23:07:00.302346 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=wmj&password=123&verify=rdxhr, cookie: password=; sessionId=1KmK
+2018-11-29 23:07:00.302552 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-11-29 23:07:00.304669 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():40  连接有效
+2018-11-29 23:07:00.304762 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():48  rSql: select login_name , is_enable from manager where login_name = 'wmj' and login_password = '123'
+2018-11-29 23:07:00.306641 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:UserLogin():65  验证成功
+2018-11-29 23:07:00.306740 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():94  rSql: select * from manager where login_name = 'wmj'
+2018-11-29 23:07:00.308156 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp:returnInfo():108  验证成功
+2018-11-29 23:07:00.511157 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():143  url: /api/about/ ip:218.192.168.196
+2018-11-29 23:07:00.511326 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():194  not find route: /api/about/ 

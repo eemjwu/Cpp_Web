@@ -34,12 +34,14 @@ public:
     void setUrl(TString str);
     void setParams(TString str);
     void setCookie(TString str);
+	void setIp(TString str);
 
 
     TString getMethod();
     TString getUrl();
     TString getParams();
     TString getCookie();
+	TString getIp();
 
 private:
 
@@ -47,6 +49,7 @@ private:
     TString m_url;
     TString m_params;
     TString m_cookie;
+	TString m_ip;
 
 
 };
@@ -63,8 +66,11 @@ public:
 
     void setResData(TString str);
 
+	void setByteData(char data[]);
+
     TString Out();
 
+	char m_byteDate[17646];
 private:
 
     //Content-type:
@@ -75,5 +81,8 @@ private:
 
     //html txt
     TString m_resData;
+
+	// 二进制数据流
+
 
 };

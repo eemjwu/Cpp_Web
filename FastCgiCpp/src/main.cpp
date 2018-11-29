@@ -24,7 +24,7 @@ int main(void)
 	DBG(L_DEBUG, "===========start=========== type:%s, fileName:%s, ip:%s, port:%s",
 		type.c_str(), fileName.c_str(), ip.c_str(), port.c_str());
 
-	if (CSQL->InitConnect("localhost", 3306, "root", "123456", "web") != CSQL_SUCCESS)
+	if (CSQL->InitConnect("localhost", 3306, "root", "0123698745", "test") != CSQL_SUCCESS)
 	{
 		DBG(L_DEBUG, "SQL初始化失败");
 		exit(1);
@@ -42,13 +42,16 @@ int main(void)
 
 	Route appRoute(threadCount.toInt());
 	CIndex appIndex;
-	appRoute.addRoute("/", routeBind(CIndex::index, appIndex));  // m_routeMap 添加{ / ， index(appIndex)  }
-	appRoute.addRoute("/index", routeBind(CIndex::index, appIndex));
+	appRoute.addRoute("/api/login/", routeBind(CIndex::index, appIndex));  // m_routeMap 添加{ / ， index(appIndex)  }
+	appRoute.addRoute("/index/", routeBind(CIndex::index, appIndex));
 	CLogin appLogin;
 	appRoute.addRoute("/logout", routeBind(CLogin::logout, appLogin));
 	appRoute.addRoute("/login", routeBind(CLogin::login, appLogin));
 	CArticle appArticle;
 	appRoute.addRoute("/article-list", routeBind(CArticle::articleList, appArticle));
+
+	Verify myverify;
+	appRoute.addRoute("/api/verify/", routeBind(Verify::get_verify, myverify));
 
 	appRoute.exec();
 

@@ -252,6 +252,30 @@ apps/CSql.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CSql.cpp.s
 .PHONY : apps/CSql.cpp.s
 
+apps/Verify.o: apps/Verify.cpp.o
+.PHONY : apps/Verify.o
+
+# target to build an object file
+apps/Verify.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o
+.PHONY : apps/Verify.cpp.o
+
+apps/Verify.i: apps/Verify.cpp.i
+.PHONY : apps/Verify.i
+
+# target to preprocess a source file
+apps/Verify.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.i
+.PHONY : apps/Verify.cpp.i
+
+apps/Verify.s: apps/Verify.cpp.s
+.PHONY : apps/Verify.s
+
+# target to generate assembly for a file
+apps/Verify.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/Verify.cpp.s
+.PHONY : apps/Verify.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -421,6 +445,9 @@ help:
 	@echo "... apps/CSql.o"
 	@echo "... apps/CSql.i"
 	@echo "... apps/CSql.s"
+	@echo "... apps/Verify.o"
+	@echo "... apps/Verify.i"
+	@echo "... apps/Verify.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

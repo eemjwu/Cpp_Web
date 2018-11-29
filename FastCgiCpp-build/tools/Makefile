@@ -516,6 +516,30 @@ Template.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/Template.cpp.s
 .PHONY : Template.cpp.s
 
+libcaptcha.o: libcaptcha.cpp.o
+.PHONY : libcaptcha.o
+
+# target to build an object file
+libcaptcha.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/libcaptcha.cpp.o
+.PHONY : libcaptcha.cpp.o
+
+libcaptcha.i: libcaptcha.cpp.i
+.PHONY : libcaptcha.i
+
+# target to preprocess a source file
+libcaptcha.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/libcaptcha.cpp.i
+.PHONY : libcaptcha.cpp.i
+
+libcaptcha.s: libcaptcha.cpp.s
+.PHONY : libcaptcha.s
+
+# target to generate assembly for a file
+libcaptcha.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/libcaptcha.cpp.s
+.PHONY : libcaptcha.cpp.s
+
 random_helper.o: random_helper.cpp.o
 .PHONY : random_helper.o
 
@@ -539,6 +563,30 @@ random_helper.s: random_helper.cpp.s
 random_helper.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/random_helper.cpp.s
 .PHONY : random_helper.cpp.s
+
+web_helper.o: web_helper.cpp.o
+.PHONY : web_helper.o
+
+# target to build an object file
+web_helper.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/web_helper.cpp.o
+.PHONY : web_helper.cpp.o
+
+web_helper.i: web_helper.cpp.i
+.PHONY : web_helper.i
+
+# target to preprocess a source file
+web_helper.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/web_helper.cpp.i
+.PHONY : web_helper.cpp.i
+
+web_helper.s: web_helper.cpp.s
+.PHONY : web_helper.s
+
+# target to generate assembly for a file
+web_helper.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/web_helper.cpp.s
+.PHONY : web_helper.cpp.s
 
 # Help Target
 help:
@@ -598,9 +646,15 @@ help:
 	@echo "... Template.o"
 	@echo "... Template.i"
 	@echo "... Template.s"
+	@echo "... libcaptcha.o"
+	@echo "... libcaptcha.i"
+	@echo "... libcaptcha.s"
 	@echo "... random_helper.o"
 	@echo "... random_helper.i"
 	@echo "... random_helper.s"
+	@echo "... web_helper.o"
+	@echo "... web_helper.i"
+	@echo "... web_helper.s"
 .PHONY : help
 
 

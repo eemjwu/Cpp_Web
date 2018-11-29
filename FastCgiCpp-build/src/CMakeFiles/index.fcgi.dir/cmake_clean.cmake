@@ -8,6 +8,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.o"
   "CMakeFiles/index.fcgi.dir/apps/CArticle.cpp.o"
   "CMakeFiles/index.fcgi.dir/apps/CSql.cpp.o"
+  "CMakeFiles/index.fcgi.dir/apps/Verify.cpp.o"
   "CMakeFiles/index.fcgi.dir/main.cpp.o"
   "../bin/index.fcgi.pdb"
   "../bin/index.fcgi"

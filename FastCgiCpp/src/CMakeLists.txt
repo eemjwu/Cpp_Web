@@ -44,6 +44,7 @@ set(APPS_HEAD
     apps/CLogin.h
     apps/CArticle.h
        apps/CSql.h
+	apps/Verify.h
     main.h
     )
 
@@ -52,6 +53,7 @@ set(APPS_SRC
     apps/CLogin.cpp
     apps/CArticle.cpp
        apps/CSql.cpp
+	apps/Verify.cpp
     main.cpp
     )
 

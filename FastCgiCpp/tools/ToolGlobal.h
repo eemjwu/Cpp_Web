@@ -31,4 +31,5 @@
 #include "TDateTime.h"
 #include "TWebSocket.h"
 #include "TSql.h"
+#include "web_helper.h"
 //#include "TMongo.h"

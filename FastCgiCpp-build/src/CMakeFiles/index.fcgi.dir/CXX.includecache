@@ -153,6 +153,18 @@ TWebSocket.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/TWebSocket.h
 TSql.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/TSql.h
+web_helper.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/web_helper.h
+
+/home/Cpp_Web/FastCgiCpp/src/../tools/libcaptcha.h
+unistd.h
+-
+stdint.h
+-
+fcntl.h
+-
+string.h
+-
 
 /home/Cpp_Web/FastCgiCpp/src/../tools/random_helper.h
 iostream
@@ -168,9 +180,9 @@ stdlib.h
 time.h
 -
 
-/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp
-CArticle.h
-/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/web_helper.h
+ToolGlobal.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/ToolGlobal.h
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
 ../main.h
@@ -179,22 +191,20 @@ CArticle.h
 /home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp
 CIndex.h
 /home/Cpp_Web/FastCgiCpp/src/apps/CIndex.h
+TJson.h
+/home/Cpp_Web/FastCgiCpp/src/apps/TJson.h
+Session.h
+/home/Cpp_Web/FastCgiCpp/src/apps/Session.h
+map
+-
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CIndex.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
 
-/home/Cpp_Web/FastCgiCpp/src/apps/CLogin.cpp
-CLogin.h
-/home/Cpp_Web/FastCgiCpp/src/apps/CLogin.h
-
 /home/Cpp_Web/FastCgiCpp/src/apps/CLogin.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
-
-/home/Cpp_Web/FastCgiCpp/src/apps/CSql.cpp
-CSql.h
-/home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
 TSql.h
@@ -207,14 +217,34 @@ stdio.h
 -
 stdlib.h
 -
+TDateTime.h
+-
+map
+-
 Singleton.h
 -
 
-/home/Cpp_Web/FastCgiCpp/src/main.cpp
-main.h
+/home/Cpp_Web/FastCgiCpp/src/apps/Verify.h
+../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+/home/Cpp_Web/FastCgiCpp/src/apps/string.h
+fcntl.h
+-
+fstream
+-
+sstream
+-
 string
 -
+iostream
+-
+libcaptcha.h
+/home/Cpp_Web/FastCgiCpp/src/apps/libcaptcha.h
 
 /home/Cpp_Web/FastCgiCpp/src/main.h
 iostream
@@ -231,6 +261,8 @@ route/Cookie.h
 /home/Cpp_Web/FastCgiCpp/src/route/Cookie.h
 route/Params.h
 /home/Cpp_Web/FastCgiCpp/src/route/Params.h
+route/Request.h
+/home/Cpp_Web/FastCgiCpp/src/route/Request.h
 route/Session.h
 /home/Cpp_Web/FastCgiCpp/src/route/Session.h
 apps/CIndex.h
@@ -241,6 +273,8 @@ apps/CArticle.h
 /home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
 apps/CSql.h
 /home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
+apps/Verify.h
+/home/Cpp_Web/FastCgiCpp/src/apps/Verify.h
 TEncode.h
 /home/Cpp_Web/FastCgiCpp/src/TEncode.h
 TConf.h
@@ -283,6 +317,8 @@ Cookie.h
 /home/Cpp_Web/FastCgiCpp/src/route/Cookie.h
 
 /home/Cpp_Web/FastCgiCpp/src/route/Route.h
+../main.h
+/home/Cpp_Web/FastCgiCpp/src/main.h
 Request.h
 /home/Cpp_Web/FastCgiCpp/src/route/Request.h
 map

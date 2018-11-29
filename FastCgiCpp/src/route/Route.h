@@ -11,7 +11,7 @@
 /// @date 2017.12.15
 //////////////////////////////////////////////
 #pragma once
-
+#include "../main.h"
 #include "Request.h"
 #include <map>
 #include <vector>
@@ -21,7 +21,10 @@
 
 using namespace WebTool;
 
-#define routeBind(funcName, appName) std::bind(&funcName, &appName, std::placeholders::_1)
+#define routeBind(funcName, appName) std::bind(&funcName, &appName, std::placeholders::_1)   
+// bind函数用于把某种形式的参数列表与已知的函数进行绑定，形成新的函数,就是函数适配器。
+
+
 
 typedef std::function<Response(Request)> FuncHttp;
 typedef std::map<TString , FuncHttp> RouteMap;
