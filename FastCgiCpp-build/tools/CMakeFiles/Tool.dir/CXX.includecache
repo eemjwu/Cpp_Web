@@ -78,14 +78,6 @@ sys/socket.h
 fcntl.h
 -
 
-/home/Cpp_Web/FastCgiCpp/tools/TSql.cpp
-iostream
--
-TLog.h
-/home/Cpp_Web/FastCgiCpp/tools/TLog.h
-TSql.h
-/home/Cpp_Web/FastCgiCpp/tools/TSql.h
-
 /home/Cpp_Web/FastCgiCpp/tools/TSql.h
 ToolGlobal.h
 /home/Cpp_Web/FastCgiCpp/tools/ToolGlobal.h
@@ -143,6 +135,10 @@ web_helper.h
 /home/Cpp_Web/FastCgiCpp/tools/web_helper.h
 ToolGlobal.h
 /home/Cpp_Web/FastCgiCpp/tools/ToolGlobal.h
+fcgi_stdio.h
+-
+fcgiapp.h
+-
 
 /usr/include/mysql/big_endian.h
 

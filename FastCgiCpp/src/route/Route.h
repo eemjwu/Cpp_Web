@@ -44,7 +44,6 @@ public:
 
     void addRoute(TString requestRoute, FuncHttp  func);
     void exec();
-
 private:
 
     //处理消息的线程函数

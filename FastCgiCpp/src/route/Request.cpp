@@ -40,6 +40,11 @@ void Request::setIp(TString str)
 	m_ip = str;
 }
 
+void Request::setReqStream(FCGX_Request * req)
+{
+	request = req;
+}
+
 
 
 TString Request::getMethod()
@@ -65,6 +70,12 @@ TString Request::getCookie()
 TString Request::getIp()
 {
 	return m_ip;
+}
+
+FCGX_Request * Request::getReqStream()
+{
+
+	return request;
 }
 
 //////////////////////////////////////////////////////

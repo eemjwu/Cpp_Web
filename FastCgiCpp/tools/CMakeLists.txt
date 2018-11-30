@@ -105,7 +105,9 @@ if (CMAKE_TOOL_TEST STREQUAL "false")
 	        hiredis
 
 			#mongoclient
-            sqlite3)
+            sqlite3
+			fcgi
+					)
 
 else()
     message("=============build test true")

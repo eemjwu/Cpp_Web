@@ -174,7 +174,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 Tool_BINARY_DIR:STATIC=/home/Cpp_Web/FastCgiCpp-build/tools
 
 //Dependencies for the target
-Tool_LIB_DEPENDS:STATIC=general;boost_system;general;boost_chrono;general;mysqlclient;general;hiredis;general;sqlite3;
+Tool_LIB_DEPENDS:STATIC=general;boost_system;general;boost_chrono;general;mysqlclient;general;hiredis;general;sqlite3;general;fcgi;
 
 //Value Computed by CMake
 Tool_SOURCE_DIR:STATIC=/home/Cpp_Web/FastCgiCpp/tools

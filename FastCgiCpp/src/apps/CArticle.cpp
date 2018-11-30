@@ -49,7 +49,12 @@ Response CArticle::articleList(Request req)
     }
     else if("POST" == req.getMethod())
     {
-        res.setResData("");
+		/*DBG(L_INFO, "52");
+		int tmp = WebTool::web_helper::upload_file_save_as(".");
+		DBG(L_INFO, "×´Ì¬£º%d",tmp);*/
+		TString res_fileName;
+		int tmp = WebTool::web_helper::upload_file_save_as(*(req.getReqStream()), res_fileName, "/home/", "wmj");
+		DBG(L_INFO, "×´Ì¬£º%d", tmp);
     }
     return res;
 }

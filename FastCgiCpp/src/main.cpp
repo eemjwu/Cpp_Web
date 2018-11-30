@@ -48,7 +48,7 @@ int main(void)
 	appRoute.addRoute("/logout", routeBind(CLogin::logout, appLogin));
 	appRoute.addRoute("/login", routeBind(CLogin::login, appLogin));
 	CArticle appArticle;
-	appRoute.addRoute("/article-list", routeBind(CArticle::articleList, appArticle));
+	appRoute.addRoute("/api/files/", routeBind(CArticle::articleList, appArticle));
 
 	Verify myverify;
 	appRoute.addRoute("/api/verify/", routeBind(Verify::get_verify, myverify));

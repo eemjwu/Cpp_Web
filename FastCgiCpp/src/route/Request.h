@@ -35,6 +35,7 @@ public:
     void setParams(TString str);
     void setCookie(TString str);
 	void setIp(TString str);
+	void setReqStream(FCGX_Request *req);
 
 
     TString getMethod();
@@ -42,6 +43,7 @@ public:
     TString getParams();
     TString getCookie();
 	TString getIp();
+	FCGX_Request* getReqStream();
 
 private:
 
@@ -50,7 +52,7 @@ private:
     TString m_params;
     TString m_cookie;
 	TString m_ip;
-
+	FCGX_Request* request;
 
 };
 

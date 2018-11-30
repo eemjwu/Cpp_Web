@@ -1,10 +1,11 @@
 #include "Route.h"
 #include "memory.h"
 #include "Request.h"
+#include<cstdio>
+#include<cstring>
 
 //#define THREAD_COUNT 20
 //static int counts[THREAD_COUNT];
-
 
 Route::Route(int threadNum):
     m_iThreadNum(threadNum)
@@ -60,6 +61,7 @@ void Route::exec()
             else if("POST" == requestMethod)
             {
                 int ilen = atoi(getenv("CONTENT_LENGTH")) + 1;
+				
                 char *bufpost = (char* )malloc(ilen);
                 memset(bufpost, 0, ilen);
                 FCGI_fread(bufpost, ilen, 1, FCGI_stdin);
@@ -162,31 +164,38 @@ void Route::processMessage(int threadID)
 			}
 		}
 
-		/*******************************************************************************************************/
-		/**************获取用户提交的参数***********************************************************************/
-		/*******************************************************************************************************/
         size_t pos = requestUri.find_first_of("?");
         TString requestRoute = requestUri.left(pos);
         TString requestParam;
-        if("GET" == requestMethod)
-        {
-            if(-1 != pos)
-            {
-                requestParam = requestUri.right(requestUri.length() - pos - 1);
-            }
-        }
-        else if("POST" == requestMethod)
-        {
-            if(FCGX_GetParam("CONTENT_LENGTH", request.envp))
-            {
-                int ilen = atoi(FCGX_GetParam("CONTENT_LENGTH", request.envp)) + 1;
-                char *bufpost = (char* )malloc(ilen);
-                memset(bufpost, 0, ilen);
-                FCGX_GetStr(bufpost,ilen,request.in);
-                requestParam = TString(bufpost);//转为字符！！
-                free(bufpost);
-            }
-        }
+		if (requestRoute != "/api/files/") 
+		{
+			/*******************************************************************************************************/
+			/*******************************************************************************************************/
+			/**************获取用户提交的参数***********************************************************************/
+			/*******************************************************************************************************/
+			if ("GET" == requestMethod)
+			{
+				if (-1 != pos)
+				{
+					requestParam = requestUri.right(requestUri.length() - pos - 1);
+				}
+			}
+			else if ("POST" == requestMethod)
+			{
+				if (FCGX_GetParam("CONTENT_LENGTH", request.envp))
+				{
+
+					int ilen = atoi(FCGX_GetParam("CONTENT_LENGTH", request.envp)) + 1;
+
+					char *bufpost = (char*)malloc(ilen);
+					memset(bufpost, 0, ilen);
+					FCGX_GetStr(bufpost, ilen, request.in);
+					requestParam = TString(bufpost);//转为字符！！
+					free(bufpost);
+				}
+			}
+		}
+		
         RouteMap::iterator iterMap;
         iterMap = m_routeMap.find(requestRoute);
         if(iterMap == m_routeMap.end())
@@ -203,6 +212,7 @@ void Route::processMessage(int threadID)
             req.setParams(requestParam);
             req.setCookie(httpCookie);
 			req.setIp(clientIp);
+			req.setReqStream(&request);
             Response res = func(req);
 			if(requestRoute != "/api/verify/")
 				FCGX_PutS(res.Out().c_str(), request.out);

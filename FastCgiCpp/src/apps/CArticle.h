@@ -13,6 +13,12 @@
 #pragma once
 
 #include "../main.h"
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <fcgiapp.h>
+#include <string.h>
+#include <fcgi_stdio.h>
 
 class  CArticle
 {
