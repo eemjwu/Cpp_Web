@@ -82,7 +82,7 @@ namespace WebTool
 	std::string TConvert::date_to_string(const TDate & dt)
 	{
 		std::string res;
-		res = dt.strftime("%Y-%m-%d");
+		res = dt.mystrftime("%Y-%m-%d");
 		return res;
 	}
 	TDate TConvert::to_date(TString& s)

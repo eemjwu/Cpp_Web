@@ -90,18 +90,29 @@ void TJson::setInt(std::string &obj, const std::string &sKey,const int &iValue)
 }
 
 void TJson::setArray(std::string &obj, const std::string &sKey, const std::vector<std::string> &array)
-{
-    Json::Reader jsonReader;
-    Json::Value jsonRoot;
-    Json::Value jsonRootTmp;
-    jsonReader.parse("", jsonRootTmp);
-    for(auto str : array)
-    {
-        jsonRootTmp.append(str);
-    }
-    jsonReader.parse(obj, jsonRoot);
-    jsonRoot[sKey] = jsonRootTmp;
-    obj = jsonRoot.toStyledString();
+{ // 有bug
+    //Json::Reader jsonReader;
+    //Json::Value jsonRoot;
+    //Json::Value jsonRootTmp;
+    //jsonReader.parse("", jsonRootTmp);
+    //for(auto str : array)
+    //{
+    //    jsonRootTmp.append(str);
+    //}
+    //jsonReader.parse(obj, jsonRoot);
+    //jsonRoot[sKey] = jsonRootTmp;
+    //obj = jsonRoot.toStyledString();
+
+	Json::Reader jsonReader;
+	Json::Value jsonRoot;
+	jsonReader.parse(obj, jsonRoot);
+	for(auto str : array)
+	{
+		Json::Value jsonRootTmp;
+		jsonReader.parse(str, jsonRootTmp);
+		jsonRoot[sKey].append(jsonRootTmp);
+	}
+	obj = jsonRoot.toStyledString();
 }
 
 } //namespace WebTool

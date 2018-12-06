@@ -17,6 +17,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Tool.dir/TFile.cpp.o"
   "CMakeFiles/Tool.dir/libcaptcha.cpp.o"
   "CMakeFiles/Tool.dir/web_helper.cpp.o"
+  "CMakeFiles/Tool.dir/TConvert.cpp.o"
   "libTool.pdb"
   "libTool.so"
 )

@@ -156,6 +156,30 @@ index.fcgi/fast:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/build
 .PHONY : index.fcgi/fast
 
+apps/CAbout.o: apps/CAbout.cpp.o
+.PHONY : apps/CAbout.o
+
+# target to build an object file
+apps/CAbout.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CAbout.cpp.o
+.PHONY : apps/CAbout.cpp.o
+
+apps/CAbout.i: apps/CAbout.cpp.i
+.PHONY : apps/CAbout.i
+
+# target to preprocess a source file
+apps/CAbout.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CAbout.cpp.i
+.PHONY : apps/CAbout.cpp.i
+
+apps/CAbout.s: apps/CAbout.cpp.s
+.PHONY : apps/CAbout.s
+
+# target to generate assembly for a file
+apps/CAbout.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CAbout.cpp.s
+.PHONY : apps/CAbout.cpp.s
+
 apps/CArticle.o: apps/CArticle.cpp.o
 .PHONY : apps/CArticle.o
 
@@ -227,6 +251,54 @@ apps/CLogin.s: apps/CLogin.cpp.s
 apps/CLogin.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CLogin.cpp.s
 .PHONY : apps/CLogin.cpp.s
+
+apps/CProduct.o: apps/CProduct.cpp.o
+.PHONY : apps/CProduct.o
+
+# target to build an object file
+apps/CProduct.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProduct.cpp.o
+.PHONY : apps/CProduct.cpp.o
+
+apps/CProduct.i: apps/CProduct.cpp.i
+.PHONY : apps/CProduct.i
+
+# target to preprocess a source file
+apps/CProduct.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProduct.cpp.i
+.PHONY : apps/CProduct.cpp.i
+
+apps/CProduct.s: apps/CProduct.cpp.s
+.PHONY : apps/CProduct.s
+
+# target to generate assembly for a file
+apps/CProduct.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProduct.cpp.s
+.PHONY : apps/CProduct.cpp.s
+
+apps/CProducts_lists.o: apps/CProducts_lists.cpp.o
+.PHONY : apps/CProducts_lists.o
+
+# target to build an object file
+apps/CProducts_lists.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProducts_lists.cpp.o
+.PHONY : apps/CProducts_lists.cpp.o
+
+apps/CProducts_lists.i: apps/CProducts_lists.cpp.i
+.PHONY : apps/CProducts_lists.i
+
+# target to preprocess a source file
+apps/CProducts_lists.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProducts_lists.cpp.i
+.PHONY : apps/CProducts_lists.cpp.i
+
+apps/CProducts_lists.s: apps/CProducts_lists.cpp.s
+.PHONY : apps/CProducts_lists.s
+
+# target to generate assembly for a file
+apps/CProducts_lists.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f src/CMakeFiles/index.fcgi.dir/build.make src/CMakeFiles/index.fcgi.dir/apps/CProducts_lists.cpp.s
+.PHONY : apps/CProducts_lists.cpp.s
 
 apps/CSql.o: apps/CSql.cpp.o
 .PHONY : apps/CSql.o
@@ -433,6 +505,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... apps/CAbout.o"
+	@echo "... apps/CAbout.i"
+	@echo "... apps/CAbout.s"
 	@echo "... apps/CArticle.o"
 	@echo "... apps/CArticle.i"
 	@echo "... apps/CArticle.s"
@@ -442,6 +517,12 @@ help:
 	@echo "... apps/CLogin.o"
 	@echo "... apps/CLogin.i"
 	@echo "... apps/CLogin.s"
+	@echo "... apps/CProduct.o"
+	@echo "... apps/CProduct.i"
+	@echo "... apps/CProduct.s"
+	@echo "... apps/CProducts_lists.o"
+	@echo "... apps/CProducts_lists.i"
+	@echo "... apps/CProducts_lists.s"
 	@echo "... apps/CSql.o"
 	@echo "... apps/CSql.i"
 	@echo "... apps/CSql.s"

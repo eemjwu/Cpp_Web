@@ -108,6 +108,15 @@ int CSql::returnInfo(std::map<std::string,std::string> res,const std::string & U
 	DBG(L_DEBUG, "验证成功");
 	return 0;
 }
+int CSql::execSQL(const std::string sSqlStr)
+{
+	return SQL.execSQL(sSqlStr);
+	
+}
+int CSql::execSQL(const std::string sSqlStr, WebTool::TSqlData & sqlData)
+{
+	return SQL.execSQL(sSqlStr, sqlData);
+}
 //test
 //#include <TEncode.h>
 //#include <TConf.h>

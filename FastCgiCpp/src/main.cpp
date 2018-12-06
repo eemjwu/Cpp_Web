@@ -48,10 +48,18 @@ int main(void)
 	appRoute.addRoute("/logout", routeBind(CLogin::logout, appLogin));
 	appRoute.addRoute("/login", routeBind(CLogin::login, appLogin));
 	CArticle appArticle;
-	appRoute.addRoute("/api/files/", routeBind(CArticle::articleList, appArticle));
+	appRoute.addRoute("/api/files/", routeBind(CArticle::articleList, appArticle));//公司介绍修改uri
+	CAbout appAbout;
+	appRoute.addRoute("/api/about/", routeBind(CAbout::about, appAbout)); //新增公司介绍显示uri
+
+	CProduct appProduct;
+	appRoute.addRoute("/api/product_class/", routeBind(CProduct::product, appProduct)); //新增产品介绍
 
 	Verify myverify;
 	appRoute.addRoute("/api/verify/", routeBind(Verify::get_verify, myverify));
+
+	CProducts_lists appCProducts_lists;
+	appRoute.addRoute("/api/product/", routeBind(CProducts_lists::products_lists, appCProducts_lists));
 
 	appRoute.exec();
 

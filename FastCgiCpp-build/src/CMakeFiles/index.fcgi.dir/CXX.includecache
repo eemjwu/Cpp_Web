@@ -16,6 +16,24 @@ string
 map
 -
 
+/home/Cpp_Web/FastCgiCpp/src/../tools/TConvert.h
+string
+-
+sstream
+-
+ctime
+-
+time.h
+-
+sys/time.h
+-
+unistd.h
+-
+TDateTime.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/TDateTime.h
+TString.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/TString.h
+
 /home/Cpp_Web/FastCgiCpp/src/../tools/TDateTime.h
 string
 -
@@ -77,6 +95,18 @@ vector
 -
 stdarg.h
 /home/Cpp_Web/FastCgiCpp/src/../tools/stdarg.h
+
+/home/Cpp_Web/FastCgiCpp/src/../tools/TRegex.h
+TString.h
+/home/Cpp_Web/FastCgiCpp/src/../tools/TString.h
+regex
+-
+string
+-
+iostream
+-
+vector
+-
 
 /home/Cpp_Web/FastCgiCpp/src/../tools/TSocket.h
 string
@@ -188,9 +218,19 @@ fcgi_stdio.h
 fcgiapp.h
 -
 
-/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp
-CArticle.h
-/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CAbout.h
+../main.h
+/home/Cpp_Web/FastCgiCpp/src/main.h
+stdlib.h
+-
+stdio.h
+-
+TSql.h
+-
+string
+-
+TJson.h
+-
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CArticle.h
 ../main.h
@@ -213,6 +253,28 @@ fcgi_stdio.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
 
 /home/Cpp_Web/FastCgiCpp/src/apps/CLogin.h
+../main.h
+/home/Cpp_Web/FastCgiCpp/src/main.h
+
+/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.h
+../main.h
+/home/Cpp_Web/FastCgiCpp/src/main.h
+
+/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp
+CProducts_lists.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.h
+TConvert.h
+/home/Cpp_Web/FastCgiCpp/src/apps/TConvert.h
+TRegex.h
+/home/Cpp_Web/FastCgiCpp/src/apps/TRegex.h
+string
+-
+cstdlib
+-
+stdio.h
+-
+
+/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.h
 ../main.h
 /home/Cpp_Web/FastCgiCpp/src/main.h
 
@@ -285,6 +347,12 @@ apps/CSql.h
 /home/Cpp_Web/FastCgiCpp/src/apps/CSql.h
 apps/Verify.h
 /home/Cpp_Web/FastCgiCpp/src/apps/Verify.h
+apps/CAbout.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CAbout.h
+apps/CProduct.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.h
+apps/CProducts_lists.h
+/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.h
 TEncode.h
 /home/Cpp_Web/FastCgiCpp/src/TEncode.h
 TConf.h

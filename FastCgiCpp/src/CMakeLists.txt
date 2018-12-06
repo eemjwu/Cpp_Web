@@ -43,17 +43,24 @@ set(APPS_HEAD
     apps/CIndex.h
     apps/CLogin.h
     apps/CArticle.h
+    apps/CAbout.h
        apps/CSql.h
 	apps/Verify.h
+	apps/CProduct.h
+	apps/CProducts_lists.h
     main.h
+    
     )
 
 set(APPS_SRC
     apps/CIndex.cpp
     apps/CLogin.cpp
     apps/CArticle.cpp
+    apps/CAbout.cpp
        apps/CSql.cpp
 	apps/Verify.cpp
+	apps/CProduct.cpp
+	apps/CProducts_lists.cpp
     main.cpp
     )
 

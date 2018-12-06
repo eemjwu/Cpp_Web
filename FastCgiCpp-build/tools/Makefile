@@ -252,6 +252,30 @@ TConf.cpp.s:
 	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TConf.cpp.s
 .PHONY : TConf.cpp.s
 
+TConvert.o: TConvert.cpp.o
+.PHONY : TConvert.o
+
+# target to build an object file
+TConvert.cpp.o:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TConvert.cpp.o
+.PHONY : TConvert.cpp.o
+
+TConvert.i: TConvert.cpp.i
+.PHONY : TConvert.i
+
+# target to preprocess a source file
+TConvert.cpp.i:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TConvert.cpp.i
+.PHONY : TConvert.cpp.i
+
+TConvert.s: TConvert.cpp.s
+.PHONY : TConvert.s
+
+# target to generate assembly for a file
+TConvert.cpp.s:
+	cd /home/Cpp_Web/FastCgiCpp-build && $(MAKE) -f tools/CMakeFiles/Tool.dir/build.make tools/CMakeFiles/Tool.dir/TConvert.cpp.s
+.PHONY : TConvert.cpp.s
+
 TDateTime.o: TDateTime.cpp.o
 .PHONY : TDateTime.o
 
@@ -613,6 +637,9 @@ help:
 	@echo "... TConf.o"
 	@echo "... TConf.i"
 	@echo "... TConf.s"
+	@echo "... TConvert.o"
+	@echo "... TConvert.i"
+	@echo "... TConvert.s"
 	@echo "... TDateTime.o"
 	@echo "... TDateTime.i"
 	@echo "... TDateTime.s"

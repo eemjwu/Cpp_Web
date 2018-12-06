@@ -59,7 +59,7 @@ set(libTool_HEAD
 	#TMongo.h
 	random_helper.h
 	TRedis.h
-
+	TConvert.h
     TString.h
     TJson.h
     TEncode.h
@@ -69,6 +69,7 @@ set(libTool_HEAD
     TFile.h
 	libcaptcha.h
 	web_helper.h
+
     )
 
 set(libTool_SRC
@@ -90,6 +91,8 @@ set(libTool_SRC
     TFile.cpp
 	libcaptcha.cpp
 	web_helper.cpp
+	TConvert.cpp
+
     )
 
 if (CMAKE_TOOL_TEST STREQUAL "false")

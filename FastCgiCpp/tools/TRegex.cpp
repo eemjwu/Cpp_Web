@@ -80,7 +80,7 @@ namespace WebTool
 		string fmt = "";
 		if (s != "")
 		{
-			return regex_replace(s, r, fmt);
+			return std::regex_replace(s, r, fmt);
 		}
 		else return "";
 	}
@@ -94,17 +94,17 @@ namespace WebTool
 		regex re_h("</?\\w+[^>]*>");
 		regex re_comment("<!--[^>]*-->");
 
-		TString tmp = regex_replace(htmlstr, re_cdata, "");
+		TString tmp = std::regex_replace(htmlstr, re_cdata, "");
 
-		tmp = regex_replace(tmp, re_script, "");
-		tmp = regex_replace(tmp, re_style, "");
+		tmp = std::regex_replace(tmp, re_script, "");
+		tmp = std::regex_replace(tmp, re_style, "");
 
-		tmp = regex_replace(tmp, re_br, "\n");
-		tmp = regex_replace(tmp, re_h, "");
-		tmp = regex_replace(tmp, re_comment, "");
+		tmp = std::regex_replace(tmp, re_br, "\n");
+		tmp = std::regex_replace(tmp, re_h, "");
+		tmp = std::regex_replace(tmp, re_comment, "");
 
 		regex blank_line("\\n+");
-		tmp = regex_replace(tmp, blank_line, "\n");
+		tmp = std::regex_replace(tmp, blank_line, "\n");
 
 		tmp = replaceCharEntity(tmp);
 

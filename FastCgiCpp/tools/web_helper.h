@@ -26,8 +26,9 @@ namespace WebTool
 	{
 	public:
 		static std::string return_msg(const int& state, const std::string& msg, const std::string& data_json = "");
-		static int upload_file_save_as(FCGX_Request& request, TString resfilename, const char * path,const char * newname = "");
-
+		static int upload_file_save_as(FCGX_Request& request, TString& resfilename, const char * path,const char * newname = "");
+		//添加一下参数说明，request是前端发送数据过来的句柄，resfilename是前端发送过来接收的文件名，是包含在request里面的，只是提取出前端发来的文件本来的名字，path是要存在本地的路径，例如/home/，newname是文件保存在服务器上的文件名，newname = ""表示如果没写名字就用文件本来的名字
+		static char*  urldecode(char* encd, char* decd);
 	};
 
 

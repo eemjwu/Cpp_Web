@@ -1,5 +1,6 @@
 #include "CArticle.h"
-
+#include <string>
+#define ospath  "/home/Cpp_Web/FastCgiCpp"
 
 ///@ /article-list
 Response CArticle::articleList(Request req)
@@ -15,36 +16,7 @@ Response CArticle::articleList(Request req)
     TString data;
     if("GET" == req.getMethod())
     {
-        if(SESSION_PWD != WebTool::TEncode::base64Decode(reqCookie["session"]))
-        {
-            //not login
-            data.loadFile(TString(HTML_PATH) + "login.html");
-        }
-        else
-        {
-            TString videoListStr;
-
-            std::vector<std::string> vecFile;
-            vecFile = WebTool::TFile::getFileListFromDir("/home/liukang/workspace/video/advideo");
-            for(auto fileName : vecFile)
-            {
-                WebTool::Template videoTemp(TString(HTML_PATH) + "videoTemp.html");
-                videoTemp.set("videoTitle", fileName);
-                videoTemp.set("videoSrc", "../../../video/advideo/" + fileName);
-                videoListStr.append(videoTemp.toStr());
-//                DBG(L_INFO,"%s", videoTemp.toStr().c_str());
-            }
-
-            WebTool::Template videoListTemp(TString(HTML_PATH) + "video.html");
-            videoListTemp.set("videoList", videoListStr);
-
-            WebTool::Template temp(TString(HTML_PATH) + "template.html");
-            temp.set("newTitle1", "testTitle");
-            temp.set("newTitle2", "article");
-            temp.set("newHtml", videoListTemp.toStr());
-            data = temp.toStr();
-        }
-        res.setResData(data);
+		;
 
     }
     else if("POST" == req.getMethod())
@@ -52,9 +24,32 @@ Response CArticle::articleList(Request req)
 		/*DBG(L_INFO, "52");
 		int tmp = WebTool::web_helper::upload_file_save_as(".");
 		DBG(L_INFO, "状态：%d",tmp);*/
-		TString res_fileName;
-		int tmp = WebTool::web_helper::upload_file_save_as(*(req.getReqStream()), res_fileName, "/home/", "wmj");
+		//res_fileName是前端发送过来的文件名，需要从此处提取，upload函数内也提取了，但是函数结束时就析构了，提取不出来。
+		static TString res_fileName;
+		int tmp = WebTool::web_helper::upload_file_save_as(*(req.getReqStream()), res_fileName, ospath"/upload/");
+
+		DBG(L_DEBUG, "data_addr = %s", res_fileName.c_str());
+		//返回文件的地址
+		std::string data_addr = "/upload/" + res_fileName;
+		std::string data_json;
+		std::string data_end_json;
+
+		TJson::setStr(data_json, "url", data_addr);
+		TJson::setStr(data_json, "state", "SUCCESS");
+
+		TJson::setObj(data_end_json, "data", data_json);
+
+
 		DBG(L_INFO, "状态：%d", tmp);
+		DBG(L_DEBUG, "data_addr = %s", data_addr.c_str());
+
+		//把string类型的data_json转化为data
+		data = TString(data_end_json);
+
+
+		res.setSetCookie(reqCookie);
+		res.setResData(data);
+
     }
     return res;
 }

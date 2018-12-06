@@ -32,6 +32,9 @@
 #include "apps/CArticle.h"
 #include  "apps/CSql.h"
 #include "apps/Verify.h"
+#include "apps/CAbout.h"
+#include "apps/CProduct.h"
+#include "apps/CProducts_lists.h"
 
 #include "TEncode.h"
 #include "TConf.h"

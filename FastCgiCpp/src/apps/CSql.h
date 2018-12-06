@@ -51,6 +51,17 @@ public:
 	///@return  错误码
 	int returnInfo(std::map<std::string, std::string> res, const std::string& User);
 
+	/// @brief  执行SQL语句,取得查询结果
+	/// @param  sSqlStr     执行的sql语句
+	/// @return 是否成功 
+	int execSQL(const std::string sSqlStr);
+
+	/// @brief  执行SQL语句,取得查询结果
+	/// @param  sSqlStr     执行的sql语句
+	/// @param  sqlData     储存sql语句的结果
+	/// @return 是否成功 
+	int execSQL(const std::string sSqlStr, WebTool::TSqlData &sqlData);
+
 
 
 	///@brief   查看文件列表

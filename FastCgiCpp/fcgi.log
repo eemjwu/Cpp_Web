@@ -1,13 +1,833 @@
-2018-11-30 22:54:02.349642 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
-2018-11-30 22:54:02.356097 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
-2018-11-30 22:54:02.356816 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
-2018-11-30 22:54:02.357588 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
-2018-11-30 22:54:02.357644 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
-2018-11-30 22:54:07.383689 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():145  url: /api/files/ ip:218.192.168.196
-2018-11-30 22:54:07.383916 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():11  method : POST,  url: /api/files/,  params: , cookie: 
-2018-11-30 22:54:07.384049 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():36  CONTENT_LENGTH:6799
-2018-11-30 22:54:07.384283 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():111  127
-2018-11-30 22:54:07.384405 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():114  pname:firefox-icon2.png
-2018-11-30 22:54:07.384468 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():117  ex:png
-2018-11-30 22:54:07.385005 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():149  result:/home/wmj
-2018-11-30 22:54:07.386290 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():57  状态：0
+2018-12-06 14:06:05.239125 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:06:05.239468 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:06:05.239932 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:06:05.246058 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:06:05.358961 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=31 ip:218.192.168.196
+2018-12-06 14:06:05.359063 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=31, cookie: 
+2018-12-06 14:06:15.321770 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:06:15.321867 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:06:15.322078 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:211213
+2018-12-06 14:06:15.322137 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:06:15.322171 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:111.png
+2018-12-06 14:06:15.322208 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:06:15.364259 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 111.png
+2018-12-06 14:06:15.364612 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:06:15.364646 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /home/Cpp_Web/FastCgiCpp/upload/111.png
+2018-12-06 14:06:15.381145 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:06:15.381279 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=%3Cp%3E1111%3Cbr/%3E%3C/p%3E&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/home/Cpp_Web/FastCgiCpp/upload/111.png&id=31&_method=put
+2018-12-06 14:06:15.381332 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=%3Cp%3E1111%3Cbr/%3E%3C/p%3E&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/home/Cpp_Web/FastCgiCpp/upload/111.png&id=31&_method=put, cookie: 
+2018-12-06 14:06:15.381502 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:06:15.381561 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():172  sql:update product set name = '1', code = '1', product_class_name = '1', standard = '1', quality_guarantee_period = '1',place_of_origin = '1', front_cover_img = '/home/Cpp_Web/FastCgiCpp/upload/111.png', content = '%3Cp%3E1111%3Cbr/%3E%3C/p%3E', is_enable = '1' where id = '31'
+2018-12-06 14:06:15.384501 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:06:16.401682 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076375864&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:06:16.401827 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076375864&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:06:52.243698 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:06:52.243756 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:06:52.243827 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:06:52.244552 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:06:52.301674 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076411756&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:06:52.301807 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076411756&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:07:22.579421 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:07:22.579579 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:07:22.579717 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:07:22.581633 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:07:53.757938 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:07:53.758056 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:07:53.758128 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:25068
+2018-12-06 14:07:53.758181 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:07:53.758272 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:1.png
+2018-12-06 14:07:53.758392 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:07:53.762387 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 1.png
+2018-12-06 14:07:53.762826 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:07:53.762884 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /home/Cpp_Web/FastCgiCpp/upload/1.png
+2018-12-06 14:07:53.780544 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:07:53.780660 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=wmjh&code=11&product_class_id=4&standard=11&quality_guarantee_period=11&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=1&front_cover_img=/home/Cpp_Web/FastCgiCpp/upload/1.png
+2018-12-06 14:07:53.780723 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=wmjh&code=11&product_class_id=4&standard=11&quality_guarantee_period=11&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=1&front_cover_img=/home/Cpp_Web/FastCgiCpp/upload/1.png, cookie: 
+2018-12-06 14:07:53.780946 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:07:53.781025 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('wmjh', '11', '4', '11', '11', '%E4%B8%AD%E5%9B%BD', '/home/Cpp_Web/FastCgiCpp/upload/1.png', '', '1')
+2018-12-06 14:07:53.784798 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:07:54.802967 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076474267&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:07:54.803143 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076474267&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:08:37.153134 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076516616&rows=20&page=2&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:08:37.153296 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076516616&rows=20&page=2&sidx=id&sord=desc, cookie: 
+2018-12-06 14:08:39.606376 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:08:39.606539 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:08:39.606686 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:08:39.608664 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:08:39.659285 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076519116&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:08:39.659416 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076519116&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:08:41.584212 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076521048&rows=20&page=2&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:08:41.584510 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076521048&rows=20&page=2&sidx=id&sord=desc, cookie: 
+2018-12-06 14:08:46.872964 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:08:46.873093 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:08:46.873235 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:08:46.875241 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:08:46.933971 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076526386&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:08:46.934094 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076526386&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:08:49.023656 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076528488&rows=20&page=2&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:08:49.024490 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076528488&rows=20&page=2&sidx=id&sord=desc, cookie: 
+2018-12-06 14:11:48.754570 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:11:48.754691 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:11:48.754835 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:11:48.756770 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:11:48.806834 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076708260&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:11:48.807047 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076708260&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:11:51.071814 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076710537&rows=20&page=2&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:11:51.071954 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076710537&rows=20&page=2&sidx=id&sord=desc, cookie: 
+2018-12-06 14:11:53.183246 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076712648&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:11:53.183380 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076712648&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:13:46.983283 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:13:46.983417 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:13:46.983560 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:13:46.985673 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:13:47.047207 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076826497&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:13:47.047328 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076826497&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:15:34.877207 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:15:34.877374 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:15:34.877521 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:15:34.879355 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:15:34.932089 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076934389&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:15:34.932201 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076934389&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:16:31.149800 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:16:31.149961 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:16:31.150107 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:16:31.167415 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:16:31.199432 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076990654&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:16:31.199492 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076990654&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:16:34.428914 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:16:34.428995 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:16:34.429075 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:16:34.430137 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:16:34.484040 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544076993939&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:16:34.484095 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544076993939&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:19:24.408593 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:19:24.417619 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:19:24.418118 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:19:24.418251 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:19:24.418268 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:19:32.425541 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:19:32.425705 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:19:32.426192 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:19:32.429344 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:19:32.477632 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077171934&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:19:32.477800 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077171934&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:19:51.895010 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:19:51.895101 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:19:51.895193 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:19:51.897090 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:19:51.945068 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077191404&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:19:51.945196 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077191404&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:19:53.183580 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:19:53.183826 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:19:53.183975 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:19:53.185935 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:20:14.875653 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:20:14.875772 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:20:14.875882 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:25070
+2018-12-06 14:20:14.875949 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:20:14.875995 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:1.png
+2018-12-06 14:20:14.876047 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:20:14.880622 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 1.png
+2018-12-06 14:20:14.881237 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:20:14.881548 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/1.png
+2018-12-06 14:20:14.897537 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:20:14.897703 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=%3Cp%3Edddd%3Cbr/%3E%3C/p%3E&name=wmj10086&code=ddd&product_class_id=1&standard=ddd&quality_guarantee_period=ddd&place_of_origin=dd&is_enable=1&front_cover_img=/upload/1.png
+2018-12-06 14:20:14.897776 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=%3Cp%3Edddd%3Cbr/%3E%3C/p%3E&name=wmj10086&code=ddd&product_class_id=1&standard=ddd&quality_guarantee_period=ddd&place_of_origin=dd&is_enable=1&front_cover_img=/upload/1.png, cookie: 
+2018-12-06 14:20:14.897995 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:20:14.898079 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('wmj10086', 'ddd', '1', 'ddd', 'ddd', 'dd', '/upload/1.png', '%3Cp%3Edddd%3Cbr/%3E%3C/p%3E', '1')
+2018-12-06 14:20:14.902246 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:20:15.918521 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077215386&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:20:15.918667 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077215386&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:21:39.003126 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:21:39.003296 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:21:39.003447 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:21:39.006230 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:21:49.452677 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:21:49.452819 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:21:49.452974 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:21:49.455436 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:21:49.559301 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=1 ip:218.192.168.196
+2018-12-06 14:21:49.559460 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=1, cookie: 
+2018-12-06 14:22:02.465616 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:22:02.465706 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:22:02.465761 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:211211
+2018-12-06 14:22:02.465802 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:22:02.465836 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:111.png
+2018-12-06 14:22:02.465870 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:22:02.506044 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 111.png
+2018-12-06 14:22:02.506231 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:22:02.506248 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/111.png
+2018-12-06 14:22:02.522785 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:22:02.522892 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=ee&code=ee&product_class_id=2&standard=ee&quality_guarantee_period=ee&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=0&front_cover_img=/upload/111.png&id=1&_method=put
+2018-12-06 14:22:02.522957 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=ee&code=ee&product_class_id=2&standard=ee&quality_guarantee_period=ee&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=0&front_cover_img=/upload/111.png&id=1&_method=put, cookie: 
+2018-12-06 14:22:02.523359 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:22:02.523456 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():172  sql:update product set name = 'ee', code = 'ee', product_class_name = '2', standard = 'ee', quality_guarantee_period = 'ee',place_of_origin = '%E4%B8%AD%E5%9B%BD', front_cover_img = '/upload/111.png', content = '', is_enable = '0' where id = '1'
+2018-12-06 14:22:02.527404 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:22:03.544471 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077323011&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:22:03.544606 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077323011&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:26:46.598078 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/ ip:218.192.168.196
+2018-12-06 14:26:46.598236 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : GET,  url: /api/login/,  params: , cookie: 
+2018-12-06 14:26:46.627071 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/static/h-ui/css/H-ui.min.css ip:218.192.168.196
+2018-12-06 14:26:46.627182 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/static/h-ui/css/H-ui.min.css 
+2018-12-06 14:26:46.630973 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/static/h-ui.admin/css/H-ui.login.css ip:218.192.168.196
+2018-12-06 14:26:46.631140 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/static/h-ui.admin/css/H-ui.login.css 
+2018-12-06 14:26:46.635125 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/lib/jquery/1.9.1/jquery.min.js ip:218.192.168.196
+2018-12-06 14:26:46.635208 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/lib/jquery/1.9.1/jquery.min.js 
+2018-12-06 14:26:46.635893 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/static/h-ui.admin/css/style.css ip:218.192.168.196
+2018-12-06 14:26:46.635983 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/static/h-ui.admin/css/style.css 
+2018-12-06 14:26:46.637745 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/lib/Hui-iconfont/1.0.8/iconfont.css ip:218.192.168.196
+2018-12-06 14:26:46.637819 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/static/h-ui/js/H-ui.min.js ip:218.192.168.196
+2018-12-06 14:26:46.637862 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/lib/Hui-iconfont/1.0.8/iconfont.css 
+2018-12-06 14:26:46.637906 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/static/h-ui/js/H-ui.min.js 
+2018-12-06 14:26:46.644987 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/static/h-ui/js/H-ui.min.js ip:218.192.168.196
+2018-12-06 14:26:46.645094 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/login/static/h-ui/js/H-ui.min.js 
+2018-12-06 14:26:55.174451 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: , cookie: 
+2018-12-06 14:26:55.176931 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: mmksx
+2018-12-06 14:26:57.273241 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 98.23739823978133, cookie: 
+2018-12-06 14:26:57.275277 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: jrpcx
+2018-12-06 14:27:02.330039 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/ ip:218.192.168.196
+2018-12-06 14:27:02.330161 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=put&username=www&password=www&verify=wwwww
+2018-12-06 14:27:02.330221 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=www&password=www&verify=wwwww, cookie: password=
+2018-12-06 14:27:02.330538 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-12-06 14:27:02.339741 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 2.117531883441326, cookie: 
+2018-12-06 14:27:02.341560 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: wwwbb
+2018-12-06 14:27:03.880612 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/ ip:218.192.168.196
+2018-12-06 14:27:03.880736 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=put&username=www&password=www&verify=wwwww
+2018-12-06 14:27:03.880801 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=www&password=www&verify=wwwww, cookie: password=
+2018-12-06 14:27:03.880993 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-12-06 14:27:03.889069 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 34.700722005796216, cookie: 
+2018-12-06 14:27:03.890450 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: ontho
+2018-12-06 14:27:07.041163 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/ ip:218.192.168.196
+2018-12-06 14:27:07.041289 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=put&username=www&password=www&verify=wwwww
+2018-12-06 14:27:07.041353 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=www&password=www&verify=wwwww, cookie: password=
+2018-12-06 14:27:07.041538 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-12-06 14:27:07.049601 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 58.52343622291536, cookie: 
+2018-12-06 14:27:07.051542 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: amltn
+2018-12-06 14:32:13.992780 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:32:14.008696 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:32:14.009946 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:32:14.010343 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:32:14.010399 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:32:17.956466 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:32:17.956625 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:32:17.957272 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:32:17.960520 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:32:18.010105 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077937469&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:32:18.010250 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077937469&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:32:26.303262 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:32:26.303572 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:32:26.303719 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:32:26.306018 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:32:37.590172 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:32:37.590303 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:32:37.590410 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:66246
+2018-12-06 14:32:37.590477 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:32:37.590524 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:32:37.590578 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:jpg
+2018-12-06 14:32:37.600134 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:32:37.600917 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:32:37.601327 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:32:37.620930 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:32:37.621305 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=0&front_cover_img=/upload/linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:32:37.621394 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=0&front_cover_img=/upload/linux鏂囦欢绯荤粺.jpg, cookie: 
+2018-12-06 14:32:37.621626 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:32:37.621712 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('1', '1', '1', '1', '1', '1', '/upload/linux鏂囦欢绯荤粺.jpg', '', '0')
+2018-12-06 14:32:37.625769 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:32:38.643473 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544077958113&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:32:38.643620 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544077958113&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:34:40.069486 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:34:40.081716 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:34:40.082543 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:34:40.083041 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:34:40.083104 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:34:43.311710 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:34:43.312130 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:34:43.312696 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:34:43.316606 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:35:00.121921 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:35:00.122398 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:35:00.122577 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:4019
+2018-12-06 14:35:00.122654 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:35:00.122711 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:35:00.122767 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:35:00.124407 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:35:00.125225 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:35:00.125295 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:35:00.138469 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:35:00.138623 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=118336&code=1&product_class_id=1&standard=100&quality_guarantee_period=1&place_of_origin=1&is_enable=0&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:35:00.138700 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=118336&code=1&product_class_id=1&standard=100&quality_guarantee_period=1&place_of_origin=1&is_enable=0&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png, cookie: 
+2018-12-06 14:35:00.138986 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:35:00.139275 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('118336', '1', '1', '100', '1', '1', '/upload/寰俊鍥剧墖_20181203212352.png', '', '0')
+2018-12-06 14:35:00.143253 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:35:01.158705 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078100630&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:35:01.158884 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078100630&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:35:55.529392 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:35:55.539467 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:35:55.540535 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:35:55.541475 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:35:55.541547 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:36:00.136139 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:36:00.136364 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:36:00.137189 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:36:00.140599 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:36:04.161813 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:36:04.162015 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=&code=1&product_class_id=&standard=&quality_guarantee_period=&place_of_origin=&is_enable=0&front_cover_img=http://218.192.170.127:81/products_edit.html
+2018-12-06 14:36:04.162096 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=&code=1&product_class_id=&standard=&quality_guarantee_period=&place_of_origin=&is_enable=0&front_cover_img=http://218.192.170.127:81/products_edit.html, cookie: 
+2018-12-06 14:36:04.162645 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:36:04.162739 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '1', '0', '', '', '', 'http://218.192.170.127:81/products_edit.html', '', '0')
+2018-12-06 14:36:04.168046 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:36:05.180766 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078164655&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:36:05.180937 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078164655&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:40:14.379559 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:40:14.388243 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:40:14.388927 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:40:14.389288 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:40:14.389334 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:40:19.026396 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:40:19.026574 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:40:19.027224 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:40:19.030653 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:40:19.054962 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078418527&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:40:19.055110 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078418527&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:40:23.852197 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:40:23.852352 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:40:23.852495 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:40:23.854936 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:40:23.916448 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=36 ip:218.192.168.196
+2018-12-06 14:40:23.916601 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=36, cookie: 
+2018-12-06 14:40:38.593617 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:40:38.594014 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:40:38.594145 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:4019
+2018-12-06 14:40:38.594219 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:40:38.594268 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:40:38.594323 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:40:38.595828 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:40:38.596950 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:40:38.597062 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:40:38.607768 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:40:38.607947 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=1&code=10086&product_class_id=3&standard=100&quality_guarantee_period=1&place_of_origin=11&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png&id=36&_method=put
+2018-12-06 14:40:38.608028 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=1&code=10086&product_class_id=3&standard=100&quality_guarantee_period=1&place_of_origin=11&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png&id=36&_method=put, cookie: 
+2018-12-06 14:40:38.608253 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:40:38.608343 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():172  sql:update product set name = '1', code = '10086', product_class_name = '3', standard = '100', quality_guarantee_period = '1',place_of_origin = '11', front_cover_img = '/upload/寰俊鍥剧墖_20181203212352.png', content = '', is_enable = '1' where id = '36'
+2018-12-06 14:40:38.612807 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:40:39.623564 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078439100&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:40:39.623653 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078439100&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:41:13.055830 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/login/ ip:218.192.168.196
+2018-12-06 14:41:13.056210 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=put&username=www&password=www&verify=wwwww
+2018-12-06 14:41:13.056294 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():13  method : POST,  url: /api/login/,  params: _method=put&username=www&password=www&verify=wwwww, cookie: password=
+2018-12-06 14:41:13.056501 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CIndex.cpp:index():45  45
+2018-12-06 14:41:13.064282 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():9  method : GET,  url: /api/verify/,  params: 17.008469554577555, cookie: 
+2018-12-06 14:41:13.066110 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/Verify.cpp:get_verify():32  验证码: nqmbk
+2018-12-06 14:42:01.343652 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:42:01.354455 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:42:01.355230 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:42:01.355558 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:42:01.355604 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:42:05.824362 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:42:05.824571 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:42:05.825061 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:42:05.828133 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:42:05.879146 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078525341&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:42:05.879460 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078525341&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:42:07.722765 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:42:07.722933 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:42:07.723074 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:42:07.725162 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:42:19.418275 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:42:19.418326 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:42:19.418370 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:775336
+2018-12-06 14:42:19.418395 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:42:19.418412 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:QQ鍥剧墖20171225210346.jpg
+2018-12-06 14:42:19.418431 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:jpg
+2018-12-06 14:42:19.445209 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = QQ鍥剧墖20171225210346.jpg
+2018-12-06 14:42:19.445402 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:42:19.445423 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/QQ鍥剧墖20171225210346.jpg
+2018-12-06 14:42:19.461393 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:42:19.461471 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/upload/QQ鍥剧墖20171225210346.jpg
+2018-12-06 14:42:19.461500 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/upload/QQ鍥剧墖20171225210346.jpg, cookie: 
+2018-12-06 14:42:19.461585 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:42:19.461614 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('1', '1', '1', '1', '1', '1', '/upload/QQ鍥剧墖20171225210346.jpg', '', '1')
+2018-12-06 14:42:19.463540 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:42:20.480714 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078539952&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:42:20.480904 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078539952&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:45:28.946510 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:45:28.955605 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:45:28.956814 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:45:28.957111 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:45:28.957143 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:45:36.251441 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:45:36.251621 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:45:36.252235 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:45:36.254964 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:45:36.371495 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=37 ip:218.192.168.196
+2018-12-06 14:45:36.371679 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=37, cookie: 
+2018-12-06 14:45:44.550379 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:45:44.550505 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:45:44.550611 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:211213
+2018-12-06 14:45:44.550893 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:45:44.550950 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:111.png
+2018-12-06 14:45:44.551004 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:45:44.590041 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 111.png
+2018-12-06 14:45:44.590335 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:45:44.590365 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/111.png
+2018-12-06 14:45:44.604871 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:45:44.604969 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/upload/111.png&id=37&_method=put
+2018-12-06 14:45:44.605015 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=1&code=1&product_class_id=1&standard=1&quality_guarantee_period=1&place_of_origin=1&is_enable=1&front_cover_img=/upload/111.png&id=37&_method=put, cookie: 
+2018-12-06 14:45:44.605158 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:45:44.605210 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():172  sql:update product set name = '1', code = '1', product_class_name = '1', standard = '1', quality_guarantee_period = '1',place_of_origin = '1', front_cover_img = '/upload/111.png', content = '', is_enable = '1' where id = '37'
+2018-12-06 14:45:44.608733 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:45:44.609007 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():180  msg{
+   "data" : null,
+   "msg" : "成功",
+   "state" : 0
+}
+
+2018-12-06 14:45:45.624912 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544078745099&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:45:45.625095 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544078745099&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:51:12.022326 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:51:12.022494 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:51:12.022642 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:51:12.025334 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:52:08.269291 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:52:08.269512 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:52:08.269599 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:25072
+2018-12-06 14:52:08.269651 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:52:08.269694 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:1.png
+2018-12-06 14:52:08.269737 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:52:08.273727 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 1.png
+2018-12-06 14:52:08.274488 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:52:08.274546 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/1.png
+2018-12-06 14:52:08.291061 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 14:52:08.291196 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=%3Cp%3E1111111555555%3Cbr/%3E%3C/p%3E&name=11&code=11&product_class_id=2&standard=11&quality_guarantee_period=11&place_of_origin=111&is_enable=0&front_cover_img=/upload/1.png
+2018-12-06 14:52:08.291268 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=%3Cp%3E1111111555555%3Cbr/%3E%3C/p%3E&name=11&code=11&product_class_id=2&standard=11&quality_guarantee_period=11&place_of_origin=111&is_enable=0&front_cover_img=/upload/1.png, cookie: 
+2018-12-06 14:52:08.291544 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 14:52:08.291636 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('11', '11', '2', '11', '11', '111', '/upload/1.png', '%3Cp%3E1111111555555%3Cbr/%3E%3C/p%3E', '0')
+2018-12-06 14:52:08.296125 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 14:52:08.296667 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():180  msg{
+   "data" : null,
+   "msg" : "成功",
+   "state" : 0
+}
+
+2018-12-06 14:52:09.314998 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079128788&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:52:09.315161 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079128788&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:55:19.270314 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:55:19.270473 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:55:19.270658 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:55:19.273175 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:55:36.785301 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:55:36.785419 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:55:36.785487 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:66248
+2018-12-06 14:55:36.785538 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:55:36.785581 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:55:36.785622 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:jpg
+2018-12-06 14:55:36.794840 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:55:36.796204 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:55:36.796281 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/linux鏂囦欢绯荤粺.jpg
+2018-12-06 14:55:59.889697 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:55:59.889856 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:55:59.890018 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:55:59.891965 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:55:59.928317 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079359400&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:55:59.928551 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079359400&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:56:06.432098 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:56:06.432274 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:56:06.432425 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:56:06.434578 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:56:27.706047 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:56:27.706294 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:56:27.706376 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:4027
+2018-12-06 14:56:27.706427 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:56:27.706470 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:56:27.706513 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:56:27.707927 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:56:27.708711 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:56:27.708947 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:57:07.752514 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:57:07.752674 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:57:07.752992 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:57:07.754967 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:57:07.797152 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079427268&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:57:07.797287 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079427268&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:57:08.533262 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:57:08.533567 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:57:08.533883 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:57:08.536333 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:57:22.546203 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 14:57:22.546348 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 14:57:22.546416 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:4025
+2018-12-06 14:57:22.546467 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 14:57:22.546510 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:57:22.546552 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 14:57:22.548046 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:57:22.548472 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 14:57:22.548520 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 14:59:08.343153 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:59:08.343309 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:59:08.343457 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:59:08.345163 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:59:08.422648 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079547852&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:59:08.422788 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079547852&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 14:59:49.455591 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 14:59:49.461253 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 14:59:49.461970 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 14:59:49.462267 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 14:59:49.462296 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 14:59:56.108914 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 14:59:56.109113 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 14:59:56.109606 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 14:59:56.112772 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 14:59:56.164130 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079595630&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 14:59:56.164272 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079595630&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:02:10.390405 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 15:02:10.400259 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 15:02:10.400676 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 15:02:10.400874 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 15:02:10.400902 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 15:02:14.685293 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:02:14.685455 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:02:14.686141 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:02:14.689565 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:02:14.762494 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079734207&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:02:14.762651 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079734207&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:02:36.721113 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:02:36.721381 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:02:36.721534 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:02:36.723433 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:02:36.776612 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079756243&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:02:36.776752 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079756243&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:03:42.272951 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:03:42.273136 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:03:42.273286 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:03:42.275735 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:03:42.322142 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079821791&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:03:42.322275 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079821791&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:03:43.017134 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:03:43.017267 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:03:43.017401 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:03:43.019264 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:03:43.076240 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079822541&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:03:43.076373 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079822541&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:04:01.458490 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:01.458843 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:01.459027 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:01.461071 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:04:01.488481 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079840965&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:04:01.488603 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079840965&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:04:27.534463 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:27.534594 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:27.534730 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:27.536747 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:04:27.560163 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079867040&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:04:27.560279 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079867040&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:04:42.669489 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:42.669625 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:42.669792 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:42.671912 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:04:42.691353 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079882172&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:04:42.691458 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079882172&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:04:45.649120 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:45.649180 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:45.649237 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:45.649905 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:04:58.763461 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:58.763631 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:58.763774 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:58.765902 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:04:58.787174 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079898267&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:04:58.787288 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079898267&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:04:59.632686 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:04:59.632821 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:04:59.632971 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:04:59.634773 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:05:15.015860 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 15:05:15.015927 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 15:05:15.015992 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:211205
+2018-12-06 15:05:15.016033 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 15:05:15.016060 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:111.png
+2018-12-06 15:05:15.016091 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 15:05:15.029822 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 111.png
+2018-12-06 15:05:15.030086 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 15:05:15.030116 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/111.png
+2018-12-06 15:05:15.039097 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:05:15.039203 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=111&name=111&code=111&product_class_id=1&standard=111&quality_guarantee_period=111&place_of_origin=111&is_enable=1&front_cover_img=/upload/111.png
+2018-12-06 15:05:15.039248 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=111&name=111&code=111&product_class_id=1&standard=111&quality_guarantee_period=111&place_of_origin=111&is_enable=1&front_cover_img=/upload/111.png, cookie: 
+2018-12-06 15:05:15.039363 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 15:05:15.039504 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('111', '111', '1', '111', '111', '111', '/upload/111.png', '111', '1')
+2018-12-06 15:05:15.042137 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 15:05:16.056894 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079915534&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:05:16.057032 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079915534&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:05:51.890600 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:05:51.890779 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:05:51.891124 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:05:51.892922 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:05:58.175059 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:05:58.175323 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=&name=&code=&product_class_id=&standard=&quality_guarantee_period=&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=0&front_cover_img=http://218.192.170.127:81/products_edit.html
+2018-12-06 15:05:58.175405 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=&name=&code=&product_class_id=&standard=&quality_guarantee_period=&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=0&front_cover_img=http://218.192.170.127:81/products_edit.html, cookie: 
+2018-12-06 15:05:58.175629 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():140  139
+2018-12-06 15:05:58.175714 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '%E4%B8%AD%E5%9B%BD', 'http://218.192.170.127:81/products_edit.html', '', '0')
+2018-12-06 15:05:58.179678 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():178  成功
+2018-12-06 15:05:59.195699 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544079958676&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:05:59.195785 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544079958676&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:07:49.319121 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/40/ ip:218.192.168.196
+2018-12-06 15:07:49.319286 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:07:49.319430 [Error]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():210  not find route: /api/product/40/ 
+2018-12-06 15:11:18.488030 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 15:11:18.491207 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 15:11:18.491766 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 15:11:18.492204 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 15:11:18.492231 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 15:13:06.866699 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:13:06.866877 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:13:06.867367 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:13:06.871074 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:13:06.930325 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080386397&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:13:06.930492 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080386397&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:13:11.904679 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:13:11.904766 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:13:11.904792 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:13:11.904939 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:13:11.907884 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:13:44.992176 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:13:44.992324 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:13:44.992468 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:13:44.994545 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:13:45.032775 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080424507&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:13:45.032912 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080424507&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:13:49.103492 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:13:49.103628 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:13:49.103691 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:13:49.103914 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:13:49.110121 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:13:51.703846 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:13:51.703984 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:13:51.704065 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:13:51.704262 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:13:51.708366 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:13:56.027168 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:13:56.027315 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:13:56.027458 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:13:56.030123 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:13:56.069862 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080435543&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:13:56.070007 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080435543&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:14:02.028470 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:14:02.028587 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:14:02.028650 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:14:02.028862 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:14:02.033630 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:15:01.738220 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:15:01.738345 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:15:01.738410 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:15:01.738588 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:15:01.743901 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:15:05.173349 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:15:05.173500 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:15:05.173646 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:15:05.175536 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:15:05.227268 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080504697&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:15:05.227371 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080504697&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:15:15.160022 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:15:15.160188 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete
+2018-12-06 15:15:15.160262 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete, cookie: 
+2018-12-06 15:15:15.160442 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('', '', '0', '', '', '', '', '', '0')
+2018-12-06 15:15:15.164648 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:18:59.607908 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:18:59.608041 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:18:59.608183 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:18:59.610096 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:18:59.664846 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080739137&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:18:59.664970 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080739137&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:19:05.945033 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:19:05.945155 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:id=45
+2018-12-06 15:19:05.945218 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: id=45, cookie: 
+2018-12-06 15:19:05.945403 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():180  sql:update product set name = '', code = '', product_class_name = '0', standard = '', quality_guarantee_period = '',place_of_origin = '', front_cover_img = '', content = '', is_enable = '0' where id = '45'
+2018-12-06 15:19:05.946739 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:20:17.860009 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:20:17.860060 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:20:17.860119 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:20:17.860884 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:20:17.921692 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080817392&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:20:17.921753 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080817392&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:20:21.856414 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:20:21.856481 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=42
+2018-12-06 15:20:21.856519 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=42, cookie: 
+2018-12-06 15:20:21.856625 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=42
+2018-12-06 15:20:21.858593 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:20:41.005019 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:20:41.005147 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:20:41.005424 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:20:41.008500 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:20:41.070357 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080840541&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:20:41.070495 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080840541&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:20:44.591546 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:20:44.591669 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=39
+2018-12-06 15:20:44.591903 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=39, cookie: 
+2018-12-06 15:20:44.592155 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=39
+2018-12-06 15:20:44.607616 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:09.917762 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:21:09.918123 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:21:09.918330 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:21:09.920499 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:21:09.970983 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080869446&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:21:09.971133 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080869446&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:21:14.344596 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:14.344784 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=46
+2018-12-06 15:21:14.344857 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=46, cookie: 
+2018-12-06 15:21:14.345051 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=46
+2018-12-06 15:21:14.348935 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:17.537979 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:17.538114 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=45
+2018-12-06 15:21:17.538185 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=45, cookie: 
+2018-12-06 15:21:17.538546 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=45
+2018-12-06 15:21:17.542960 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:20.177499 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:20.177640 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=44
+2018-12-06 15:21:20.177709 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=44, cookie: 
+2018-12-06 15:21:20.177902 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=44
+2018-12-06 15:21:20.182242 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:22.377418 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:22.377517 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=43
+2018-12-06 15:21:22.377622 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=43, cookie: 
+2018-12-06 15:21:22.377782 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=43
+2018-12-06 15:21:22.385867 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:24.547025 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:24.547259 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=41
+2018-12-06 15:21:24.547331 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=41, cookie: 
+2018-12-06 15:21:24.547524 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=41
+2018-12-06 15:21:24.551488 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:33.059968 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:21:33.060095 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=40
+2018-12-06 15:21:33.060163 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=40, cookie: 
+2018-12-06 15:21:33.060523 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=40
+2018-12-06 15:21:33.065456 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:21:34.646026 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:21:34.646156 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:21:34.646299 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:21:34.648490 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:21:34.705259 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544080894177&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:21:34.705452 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544080894177&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:25:22.214553 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 15:25:22.231680 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 15:25:22.232954 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 15:25:22.233697 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 15:25:22.233783 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 15:25:56.779599 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/?_search=false&nd=1544081155933&rows=20&page=1&sidx=id&sord=desc ip:218.192.169.126
+2018-12-06 15:25:56.779773 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: _search=false&nd=1544081155933&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:25:56.780685 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:25:56.784695 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id desc  limit 0,20
+2018-12-06 15:26:07.246239 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.169.126
+2018-12-06 15:26:07.246386 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:26:07.246529 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:26:07.248464 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:26:07.264936 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081166436&rows=20&page=1&sidx=id&sord=desc ip:218.192.169.126
+2018-12-06 15:26:07.265218 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081166436&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:26:12.594280 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.169.126
+2018-12-06 15:26:12.594555 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:26:12.594769 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:26:12.596813 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:26:12.685497 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=35 ip:218.192.169.126
+2018-12-06 15:26:12.685650 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=35, cookie: 
+2018-12-06 15:26:16.483654 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.169.126
+2018-12-06 15:26:16.483836 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:26:16.483982 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:26:16.486025 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:26:16.551550 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=35 ip:218.192.169.126
+2018-12-06 15:26:16.551781 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=35, cookie: 
+2018-12-06 15:26:21.419434 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.169.126
+2018-12-06 15:26:21.419598 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:26:21.419737 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:26:21.422266 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:26:21.481162 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=35 ip:218.192.169.126
+2018-12-06 15:26:21.481326 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=35, cookie: 
+2018-12-06 15:26:44.320629 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.169.126
+2018-12-06 15:26:44.320763 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 15:26:44.320870 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:6813
+2018-12-06 15:26:44.320939 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 15:26:44.320987 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181201102037.png
+2018-12-06 15:26:44.321040 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 15:26:44.323129 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181201102037.png
+2018-12-06 15:26:44.323755 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 15:26:44.323809 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181201102037.png
+2018-12-06 15:26:44.335319 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.169.126
+2018-12-06 15:26:44.335536 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=111&name=111&code=111&product_class_id=2&standard=111&quality_guarantee_period=111&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181201102037.png&id=35&_method=put
+2018-12-06 15:26:44.335608 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=111&name=111&code=111&product_class_id=2&standard=111&quality_guarantee_period=111&place_of_origin=%E4%B8%AD%E5%9B%BD&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181201102037.png&id=35&_method=put, cookie: 
+2018-12-06 15:26:44.335830 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():180  sql:update product set name = '111', code = '111', product_class_name = '2', standard = '111', quality_guarantee_period = '111',place_of_origin = '%E4%B8%AD%E5%9B%BD', front_cover_img = '/upload/寰俊鍥剧墖_20181201102037.png', content = '111', is_enable = '1' where id = '35'
+2018-12-06 15:26:44.340070 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:26:45.360657 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081204530&rows=20&page=1&sidx=id&sord=desc ip:218.192.169.126
+2018-12-06 15:26:45.360792 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081204530&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:30:07.013780 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():25  ===========start=========== type:file, fileName:fcgi.log, ip:127.0.0.1, port:9090
+2018-12-06 15:30:07.028717 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():32  SQL初始化成功
+2018-12-06 15:30:07.029447 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/../route/Session.h:Session():29  session 初始化成功
+2018-12-06 15:30:07.029819 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Session.cpp:InitSession():12  session 初始化成功
+2018-12-06 15:30:07.029872 [Debug]/home/Cpp_Web/FastCgiCpp/src/main.cpp:main():40  初始化成功
+2018-12-06 15:30:19.832720 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/?_search=false&nd=1544081419315&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:30:19.832892 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: _search=false&nd=1544081419315&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:30:19.833619 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:19.836855 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id desc  limit 0,20
+2018-12-06 15:30:25.435559 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:30:25.435794 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&_id=1001687715
+2018-12-06 15:30:25.435905 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : POST,  url: /api/product_class/,  params: _method=delete&_id=1001687715, cookie: 
+2018-12-06 15:30:25.436114 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():278  产品删除接口
+2018-12-06 15:30:25.436204 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():288  SQL login success
+2018-12-06 15:30:25.439180 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():290  SQL open success
+2018-12-06 15:30:25.439267 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():295  SQL command DELETE FROM `test`.`product_class` WHERE `id` = 1001687715
+2018-12-06 15:30:25.443257 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():299  SQL error in 0
+2018-12-06 15:30:26.728379 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/?_search=false&nd=1544081426216&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:30:26.728628 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: _search=false&nd=1544081426216&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:30:26.728834 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:26.730952 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id desc  limit 0,20
+2018-12-06 15:30:39.459194 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:30:39.459438 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:30:39.459629 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:39.461646 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:30:39.482489 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081438969&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:30:39.482692 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081438969&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:30:43.145313 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:30:43.145461 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:_method=delete&id=38
+2018-12-06 15:30:43.145530 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: _method=delete&id=38, cookie: 
+2018-12-06 15:30:43.145903 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():174  sql:delete from product where id=38
+2018-12-06 15:30:43.150449 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:30:44.927448 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:30:44.927614 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:30:44.927897 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:44.930034 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:30:44.944969 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081444432&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:30:44.945107 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081444432&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:30:48.874700 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:30:48.874766 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:30:48.874825 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:48.875829 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:30:48.958678 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?id=37 ip:218.192.168.196
+2018-12-06 15:30:48.958812 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: id=37, cookie: 
+2018-12-06 15:30:51.976741 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:30:51.976908 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:30:51.977053 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:30:51.979092 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:31:07.155027 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/files/ ip:218.192.168.196
+2018-12-06 15:31:07.155222 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():12  method : POST,  url: /api/files/,  params: , cookie: 
+2018-12-06 15:31:07.155323 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():66  CONTENT_LENGTH:4019
+2018-12-06 15:31:07.155392 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():141  127
+2018-12-06 15:31:07.155441 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():144  resfilename:寰俊鍥剧墖_20181203212352.png
+2018-12-06 15:31:07.155499 [Info ]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:upload_file_save_as():147  ex:png
+2018-12-06 15:31:07.156789 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():31  data_addr = 寰俊鍥剧墖_20181203212352.png
+2018-12-06 15:31:07.157401 [Info ]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():43  状态：0
+2018-12-06 15:31:07.157486 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CArticle.cpp:articleList():44  data_addr = /upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 15:31:07.168164 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/ ip:218.192.168.196
+2018-12-06 15:31:07.168297 [Debug]/home/Cpp_Web/FastCgiCpp/tools/web_helper.cpp:urldecode():42  解码:content=22&name=2&code=2&product_class_id=4&standard=2&quality_guarantee_period=2018-11-12&place_of_origin=2&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png
+2018-12-06 15:31:07.168366 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : POST,  url: /api/product/,  params: content=22&name=2&code=2&product_class_id=4&standard=2&quality_guarantee_period=2018-11-12&place_of_origin=2&is_enable=1&front_cover_img=/upload/寰俊鍥剧墖_20181203212352.png, cookie: 
+2018-12-06 15:31:07.168593 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():166  sql:INSERT INTO `product` (`name`, `code`, `product_class_name`, `standard`, `quality_guarantee_period`, `place_of_origin`, `front_cover_img`, `content`, `is_enable`) values('2', '2', '4', '2', '2018-11-12', '2', '/upload/寰俊鍥剧墖_20181203212352.png', '22', '1')
+2018-12-06 15:31:07.171935 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():188  成功
+2018-12-06 15:31:08.185999 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081467673&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:31:08.186142 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081467673&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:31:10.213739 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:31:10.213891 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:31:10.214034 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:31:10.215964 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:31:10.236479 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081469722&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:31:10.236629 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081469722&rows=20&page=1&sidx=id&sord=desc, cookie: 
+2018-12-06 15:31:11.172234 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product_class/ ip:218.192.168.196
+2018-12-06 15:31:11.172426 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():12  method : GET,  url: /api/product_class/,  params: , cookie: 
+2018-12-06 15:31:11.173257 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():23  id_edit = 
+2018-12-06 15:31:11.175525 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProduct.cpp:product():101  语句:select * from product_class order by id asc  limit 0,10
+2018-12-06 15:31:11.190990 [Debug]/home/Cpp_Web/FastCgiCpp/src/route/Route.cpp:processMessage():147  url: /api/product/?_search=false&nd=1544081470678&rows=20&page=1&sidx=id&sord=desc ip:218.192.168.196
+2018-12-06 15:31:11.191106 [Debug]/home/Cpp_Web/FastCgiCpp/src/apps/CProducts_lists.cpp:products_lists():16  method : GET,  url: /api/product/,  params: _search=false&nd=1544081470678&rows=20&page=1&sidx=id&sord=desc, cookie: 

@@ -12,7 +12,37 @@ namespace WebTool
 
 		return res_json;
 	}
-	int web_helper::upload_file_save_as(FCGX_Request& request, TString resfilename, const char * path, const char * newname)//参数说明  ：传入{ 路径，新文件名，输入流 } 传出{ 上传的文件名 } 返回：错误码
+	char*  web_helper::urldecode( char* encd, char* decd)
+	{
+		int j, i;
+		char *cd = (char*)encd;
+		char p[2];
+		unsigned int num;
+		j = 0;
+
+		for (i = 0; i < strlen(cd) ; i++)
+		{
+			memset(p, '/0', 2);
+			if (cd[i] != '%')
+			{
+				decd[j++] = cd[i];
+				continue;
+			}
+
+			p[0] = cd[++i];
+			p[1] = cd[++i];
+
+			p[0] = p[0] - 48 - ((p[0] >= 'A') ? 7 : 0) - ((p[0] >= 'a') ? 32 : 0);
+			p[1] = p[1] - 48 - ((p[1] >= 'A') ? 7 : 0) - ((p[1] >= 'a') ? 32 : 0);
+			decd[j++] = (p[0] * 16 + p[1]);
+
+		}
+		decd[j] = '\0';
+
+		DBG(L_DEBUG, "解码:%s", decd);
+		return decd;
+	}
+	int web_helper::upload_file_save_as(FCGX_Request& request, TString& resfilename, const char * path, const char * newname)//参数说明  ：传入{ 路径，新文件名，输入流 } 传出{ 上传的文件名 } 返回：错误码
 	{
 		FILE *fp;
 		int getState = STATE_START;
@@ -111,7 +141,7 @@ namespace WebTool
 						DBG(L_INFO, "127");
 						/////////////////////////找后缀///////////////////////////////
 						resfilename = TString(fileName + strlen(path));
-						DBG(L_INFO, "pname:%s", resfilename.c_str());
+						DBG(L_INFO, "resfilename:%s", resfilename.c_str());
 						size_t pos = resfilename.find_first_of(".");
 						TString ex = resfilename.right(resfilename.length() - pos - 1);
 						DBG(L_INFO, "ex:%s", ex.c_str());
@@ -138,7 +168,7 @@ namespace WebTool
 							strcat(result, newname);
 							
 							std::string pname = static_cast <std::string>(result) + "." + ex;
-							
+							DBG(L_INFO, "pname:%s", pname.c_str());
 							if ((fp = fopen(pname.c_str(), "w")) == NULL)
 							{
 								DBG(L_INFO, "open file %s error %d", fileName, errno);
